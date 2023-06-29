@@ -1,14 +1,8 @@
-import {  } from 'react'
-import './App.css'
+import {} from "react";
+import "./App.css";
 
 function App() {
-
-  return (
-    <>
-      space foundation
-      
-    </>
-  )
+  return <>space foundation by jatin</>;
 }
 
-export default App
+export default App;
