@@ -30,11 +30,10 @@ const Home = () => {
           }}
         >
           <div onScroll={handleScroll}>
-            <Navbar />
             <Stack
               justifyContent="flex-end"
               alignItems="center"
-              sx={{ height: "80vh" }}
+              sx={{ height: "100vh" }}
             >
               <Stack direction="row" spacing={2} sx={{ width: "10vh", pb: 5 }}>
                 <CircleIcon
