@@ -4,14 +4,14 @@ import React from "react";
 import img from "../assets/img.jpg";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import VideoPlayer from "./video";
+import VideoPlayer from "../components/Video";
 import PlayCircleTwoToneIcon from "@mui/icons-material/PlayCircleTwoTone";
 import BACK from "../assets/BACK.png";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import ylo from "../assets/ylo.png";
 import ylo2 from "../assets/ylo2.png";
 import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
-import Hovercard from "./Hovercard";
+import Hovercard from "../components/Hovercard";
 const OurStory = () => {
   return (
     <>
@@ -394,7 +394,6 @@ const OurStory = () => {
             zIndex="1"
           >
             <Hovercard />
-            
           </Stack>
         </Box>
       </Box>

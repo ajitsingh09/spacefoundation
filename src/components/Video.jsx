@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import ReactPlayer from 'react-player';
+import React, { useState } from "react";
+import ReactPlayer from "react-player";
 import img from "../assets/img.jpg";
-
 
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -14,7 +13,11 @@ const VideoPlayer = () => {
     <div>
       {!isPlaying && (
         <div onClick={handlePlay}>
-          <img src={img} alt="Thumbnail"style={{ width: "600PX", padding: "100px 0 0 0"}} />
+          <img
+            src={img}
+            alt="Thumbnail"
+            style={{ width: "600PX", padding: "100px 0 0 0" }}
+          />
           <div className="play-button-overlay">
             <i className="fa fa-play"></i>
           </div>
@@ -23,7 +26,7 @@ const VideoPlayer = () => {
 
       {isPlaying && (
         <ReactPlayer
-          url={'https://youtu.be/LSRNmhLS76o'}
+          url={"https://youtu.be/LSRNmhLS76o"}
           controls
           playing
           width="100%"
@@ -35,7 +38,3 @@ const VideoPlayer = () => {
 };
 
 export default VideoPlayer;
-
-
-
-

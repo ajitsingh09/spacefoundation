@@ -47,8 +47,7 @@ const Hovercard = () => {
                     ? "rgba(255, 205, 0, 0.7)"
                     : "transparent",
                 transition: "background-color 0.5s ease-out",
-                backgroundSize:
-                  hoveredIndex === index ? "contain" : "cover",
+                backgroundSize: hoveredIndex === index ? "contain" : "cover",
                 cursor: "pointer",
                 backgroundPosition: "center",
                 borderRadius: "10px 10px 0 0",
@@ -66,8 +65,7 @@ const Hovercard = () => {
                 left: "calc(50% - 25px)",
                 width: "50px",
                 height: "50px",
-                backgroundSize:
-                  hoveredIndex === index ? "30px 30px" : "cover",
+                backgroundSize: hoveredIndex === index ? "30px 30px" : "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 zIndex: 3,
@@ -105,10 +103,12 @@ const Hovercard = () => {
                 paddingTop="20px"
                 display="flex"
                 flexDirection="column"
-                rowGap="19px" 
+                rowGap="19px"
               >
-                <Progressbar raised={val.Raised} goals={val.Goals}/>
-                <Typography variant="h7">${val.Raised} Raised / ${val.Goals} Goals</Typography>
+                <Progressbar raised={val.Raised} goals={val.Goals} />
+                <Typography variant="h7">
+                  ${val.Raised} Raised / ${val.Goals} Goals
+                </Typography>
                 <Typography fontWeight="bold">{val.des}</Typography>
               </Box>
             </Stack>

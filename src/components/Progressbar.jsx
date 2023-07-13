@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CircularProgress, Typography } from "@mui/material";
 
-const Progressbar = ({raised,goals}) => {
+const Progressbar = ({ raised, goals }) => {
   // const raisedAmount = 46303;
   // const goalAmount = 95000;
   const targetPercentage = Math.floor((raised / goals) * 100);
@@ -17,15 +17,14 @@ const Progressbar = ({raised,goals}) => {
   }, [targetPercentage]);
 
   return (
-    <div style={{ position: "relative", display: "inline-block"
-     }}>
+    <div style={{ position: "relative", display: "inline-block" }}>
       <CircularProgress
         variant="determinate"
         value={animationPercentage}
         size={100}
         thickness={5}
         sx={{
-          color:"#ffcd00"
+          color: "#ffcd00",
         }}
       />
       <Typography
