@@ -13,3 +13,11 @@ body {
   color: black;
   font-size: 15px;
 }
+/* .card:hover{
+  border: 1px solid #ffcd00;
+            position:absolute;
+            background-color: white;
+            background-image: url("../src/assets/unlink.png");
+            background-repeat:no-repeat;
+            background-position:center center
+} */
