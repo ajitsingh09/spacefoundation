@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Box, Stack, Button, Typography } from "@mui/material";
 import bg1 from "../assets/bg1.png";
+import bg2 from "../assets/bg2.jpg";
 import CircleIcon from "@mui/icons-material/Circle";
 import { useState } from "react";
 import bgIntro from "../assets/bgIntro.png";
@@ -23,7 +24,7 @@ const Home = () => {
       <div onScroll={handleScroll}>
         <Box
           sx={{
-            backgroundImage: `url(${bg1})`,
+            backgroundImage: `url(${bg2})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             hight: "200vh",
