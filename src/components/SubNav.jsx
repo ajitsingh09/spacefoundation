@@ -25,7 +25,7 @@ const SubNav = () => {
   return (
     <Stack
       direction="row"
-      justifyContent="flex-end"
+      justifyContent="space-between"
       alignItems="center"
       alignSelf={"center"}
       spacing={6}
@@ -41,6 +41,7 @@ const SubNav = () => {
         justifyContent="space-evenly"
         alignContent="center"
         spacing={2}
+        pl={2}
         sx={{ color: "white", height: "100%", paddingRight: 10 }}
       >
         <div
@@ -48,7 +49,6 @@ const SubNav = () => {
             display: "flex",
             alignItems: "center",
             height: "100%",
-            backgroundColor: "green",
           }}
           onMouseEnter={() => handleMouseEnter(1)}
           onMouseLeave={() => handleMouseLeave(1)}
@@ -64,8 +64,13 @@ const SubNav = () => {
                 justifyContent="center"
                 alignItems={"center"}
               >
-                <Typography alignSelf="center" display="inline-block">
-                  Our Story
+                <Typography
+                  alignSelf="center"
+                  display="inline-block"
+                  className="navlink"
+                  fontWeight={"bold"}
+                >
+                  OUR WORK
                 </Typography>
                 <KeyboardArrowDownIcon className="navlink-link-downarrow" />
               </Box>
@@ -115,8 +120,12 @@ const SubNav = () => {
                 justifyContent="center"
                 alignItems={"center"}
               >
-                <Typography alignSelf="center" display="inline-block">
-                  Our Story
+                <Typography
+                  alignSelf="center"
+                  display="inline-block"
+                  fontWeight={"bold"}
+                >
+                  OUR STORY
                 </Typography>
                 <KeyboardArrowDownIcon className="navlink-link-downarrow" />
               </Box>
@@ -178,8 +187,12 @@ const SubNav = () => {
                 justifyContent="center"
                 alignItems={"center"}
               >
-                <Typography alignSelf="center" display="inline-block">
-                  Our Story
+                <Typography
+                  alignSelf="center"
+                  display="inline-block"
+                  fontWeight={"bold"}
+                >
+                  OUR IMPACT
                 </Typography>
                 <KeyboardArrowDownIcon className="navlink-link-downarrow" />
               </Box>
@@ -224,8 +237,12 @@ const SubNav = () => {
                 justifyContent="center"
                 alignItems={"center"}
               >
-                <Typography alignSelf="center" display="inline-block">
-                  Our Story
+                <Typography
+                  alignSelf="center"
+                  display="inline-block"
+                  fontWeight={"bold"}
+                >
+                  TAKE ACTIONS
                 </Typography>
                 <KeyboardArrowDownIcon className="navlink-link-downarrow" />
               </Box>
@@ -271,8 +288,12 @@ const SubNav = () => {
                 justifyContent="center"
                 alignItems={"center"}
               >
-                <Typography alignSelf="center" display="inline-block">
-                  Our Story
+                <Typography
+                  alignSelf="center"
+                  display="inline-block"
+                  fontWeight={"bold"}
+                >
+                  MEDIA
                 </Typography>
                 <KeyboardArrowDownIcon className="navlink-link-downarrow" />
               </Box>
@@ -315,8 +336,12 @@ const SubNav = () => {
                 justifyContent="center"
                 alignItems={"center"}
               >
-                <Typography alignSelf="center" display="inline-block">
-                  Our Story
+                <Typography
+                  alignSelf="center"
+                  display="inline-block"
+                  fontWeight={"bold"}
+                >
+                  CONTACT US
                 </Typography>
                 <KeyboardArrowDownIcon className="navlink-link-downarrow" />
               </Box>
@@ -351,9 +376,11 @@ const SubNav = () => {
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
-        sx={{ width: 100, height: "100%", backgroundColor: "white" }}
+        sx={{ width: 200, height: "100%", backgroundColor: "white" }}
       >
-        <Box onClick={() => navigate("/donate")}>Donate Now</Box>
+        <Box onClick={() => navigate("/donate")}>
+          <Typography fontWeight={"bold"}>Donation Now</Typography>
+        </Box>
       </Box>
     </Stack>
   );

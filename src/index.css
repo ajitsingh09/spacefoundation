@@ -9,15 +9,16 @@ body {
   text-decoration: none;
   color: black;
 }
+.navlink {
+  font-weight: 600;
+}
 .navlink-link-downarrow {
   color: black;
   font-size: 15px;
 }
-/* .card:hover{
-  border: 1px solid #ffcd00;
-            position:absolute;
-            background-color: white;
-            background-image: url("../src/assets/unlink.png");
-            background-repeat:no-repeat;
-            background-position:center center
-} */
+.mainNavLInks {
+  transition-duration: 500ms;
+}
+.mainNavLInks:hover {
+  color: #ffcc00;
+}

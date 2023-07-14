@@ -7,23 +7,12 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import SButton from "./utils/SButton";
 import SubNav from "./SubNav";
+
 const Navbar = () => {
   const navigate = useNavigate();
-  const [popoverOpen, setPopoverOpen] = useState(0);
-  const handleMouseEnter = (id) => {
-    setPopoverOpen(id);
-  };
-  const handleMouseLeave = (id) => {
-    setPopoverOpen(0);
-  };
-  const isPopoverOpen = (id) => {
-    return popoverOpen === id;
-  };
   return (
     <>
       <Stack
@@ -36,33 +25,55 @@ const Navbar = () => {
           justifyContent={"space-between"}
           alignItems={"center"}
           sx={{
-            height: "22vh",
+            height: "27vh",
             width: "95%",
-            outline: "1px solid red",
+            // outline: "1px solid red",
             // paddingX: "2rem",
           }}
         >
           <Box>
             <Link to={"/"}>
-              <img src={logo} alt="logo" style={{ width: "200px" }} />
+              <img src={logo} alt="logo" style={{ width: "180px" }} />
             </Link>
           </Box>
           <Stack
             direction={"row"}
             alignItems={"center"}
             sx={{ color: "white" }}
+            gap={3}
           >
-            <Typography color={"white"}>Need Help</Typography>
-            <Typography color={"white"}>Explore the crowd Hope</Typography>
+            <Typography color={"white"} className="mainNavLInks">
+              Need Help
+            </Typography>
+            <Typography color={"white"} className="mainNavLInks">
+              Explore the crowd Hope
+            </Typography>
           </Stack>
-          <Stack direction={"row"} alignItems={"center"} gap={2}>
-            <FacebookIcon sx={{ color: "white" }} />
-            <InstagramIcon sx={{ color: "white" }} />
-            <TwitterIcon sx={{ color: "white" }} />
-            <LinkedInIcon sx={{ color: "white" }} />
-            <PinterestIcon sx={{ color: "white" }} />
+          <Stack direction={"row"} alignItems={"center"} gap={3}>
+            <FacebookIcon
+              sx={{ color: "white", fontSize: 20 }}
+              className="mainNavLInks"
+            />
+            <InstagramIcon
+              sx={{ color: "white", fontSize: 20 }}
+              className="mainNavLInks"
+            />
+            <TwitterIcon
+              sx={{ color: "white", fontSize: 20 }}
+              className="mainNavLInks"
+            />
+            <LinkedInIcon
+              sx={{ color: "white", fontSize: 20 }}
+              className="mainNavLInks"
+            />
+            <PinterestIcon
+              sx={{ color: "white", fontSize: 20 }}
+              className="mainNavLInks"
+            />
           </Stack>
-          <SButton title="Login" />
+          <SButton>
+            <Typography>Login</Typography>
+          </SButton>
           <Stack justifyContent={"center"} alignItems={"center"}>
             <Typography color={"white"}>123-456-7890</Typography>
             <Typography color={"white"}>
