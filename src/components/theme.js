@@ -3,7 +3,7 @@ import "../Fonts/font.css";
 
 const theme = createTheme({
   typography: {
-    fontFamily: "SourceSans3,Ubuntu,UbuntuMedium, sans-serif",
+    fontFamily: "Ubuntu,UbuntuMedium,SourceSans3, sans-serif",
   },
   palette: {
     secondary: {

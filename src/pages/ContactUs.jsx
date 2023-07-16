@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import Event from "../components/Event";
 
 const ContactUs = () => {
   return (
@@ -17,6 +18,9 @@ const ContactUs = () => {
           }}
         >
           <Typography variant="h1">Contact US</Typography>
+        </Box>
+        <Box paddingY={10}>
+          <Event />
         </Box>
       </>
     </div>
