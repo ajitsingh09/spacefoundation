@@ -8,17 +8,64 @@ body {
 .navlink-link {
   text-decoration: none;
   color: black;
+  transition-duration: 400ms;
 }
-.navlink {
-  font-weight: 600;
-}
+
 .navlink-link-downarrow {
+  padding-left: 2px;
+  font-weight: bold;
   color: black;
-  font-size: 15px;
+  font-size: 10px;
+  transition: 400ms;
 }
+
+.navlink-Box:hover .navlink-link-downarrow {
+  color: white;
+  transform: rotateX(180deg);
+}
+.navlink-Box:hover .navlink-link {
+  color: white;
+}
+/* .navlink-link:hover .navlink-link-downarrow {
+  color: white;
+  transform: rotateX(180deg);
+}
+.navlink-link:hover {
+  color: white;
+} */
+
 .mainNavLInks {
-  transition-duration: 500ms;
+  transition-duration: 600ms;
+  /* position: relative; */
 }
+
 .mainNavLInks:hover {
   color: #ffcc00;
+}
+
+.popperLinks {
+  text-decoration: none;
+  color: #454545;
+}
+.popperLinks:hover {
+  color: #0e0e0e;
+}
+.fade-in-animation {
+  opacity: 0;
+  transform: scale(0.8);
+  animation-name: fade-in;
+  animation-duration: 0.8s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

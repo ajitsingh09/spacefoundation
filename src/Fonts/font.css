@@ -2,3 +2,11 @@
   font-family: "SourceSans3";
   src: url("./SourceSans3-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./Ubuntu-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "UbuntuMedium";
+  src: url("./Ubuntu-Medium.ttf") format("truetype");
+}
