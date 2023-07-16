@@ -128,3 +128,13 @@
 // };
 
 // export default MyComponent;
+
+
+background-color: #ffcd00;
+opacity: 0.9;
+background-image: radial-gradient(#ffffff 1.75px, #ffcd00 1.75px);
+background-size: 35px 35px;
+background-color: #ffcd00;
+opacity: 0.8;
+background-image: radial-gradient(#ffffff 0.9px, #ffcd00 0.9px);
+background-size: 18px 18px;

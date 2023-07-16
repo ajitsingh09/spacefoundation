@@ -35,12 +35,13 @@ body {
 } */
 
 .mainNavLInks {
-  transition-duration: 600ms;
-  /* position: relative; */
+  transition-duration: 500ms;
+  text-decoration: none;
+  color: grey;
 }
 
 .mainNavLInks:hover {
-  color: #ffcc00;
+  color: #ffcd00;
 }
 
 .popperLinks {
