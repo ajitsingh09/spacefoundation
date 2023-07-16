@@ -4,7 +4,7 @@ export const card = [
     Raised: "46303",
     Goals: "95000",
     des: "Help sarah go to primary school next year",
-    cover: "../src/assets/img.jpg",
+    cover: "https://images.unsplash.com/photo-1687902625864-faedb40f83a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80",
     png: "../src/assets/unlink.png",
   },
   {
@@ -12,7 +12,7 @@ export const card = [
     Raised: "54303",
     Goals: "95679",
     des: "Help sarah go to primary school next year",
-    cover: "../src/assets/img.jpg",
+    cover: "https://images.unsplash.com/photo-1687902625864-faedb40f83a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80",
     png: "../src/assets/unlink.png",
   },
   {
@@ -20,7 +20,7 @@ export const card = [
     Raised: "34303",
     Goals: "59000",
     des: "Help sarah go to primary school next year",
-    cover: "../src/assets/img.jpg",
+    cover: "https://images.unsplash.com/photo-1687902625864-faedb40f83a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80",
     png: "../src/assets/unlink.png",
   },
   {
@@ -28,14 +28,14 @@ export const card = [
     Raised: "38303",
     Goals: "54000",
     des: "Help sarah go to primary school next year",
-    cover: "../src/assets/img.jpg",
+    cover: "https://images.unsplash.com/photo-1687902625864-faedb40f83a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80",
     png: "../src/assets/unlink.png",
   },
 ];
 export const hover = [
   {
     id: 0,
-    cover: "../src/assets/img.jpg",
+    cover: "https://images.unsplash.com/photo-1687902625864-faedb40f83a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=873&q=80",
     png: "../src/assets/unlink.png",
     monthyear: "june 2023",
     Date: "31",
