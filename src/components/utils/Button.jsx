@@ -1,10 +1,10 @@
-import { Button } from "@mui/material";
+import { Button as MuiButton } from "@mui/material";
 import { styled } from "@mui/system";
 
-const SButton = styled(Button)({
+const Button = styled(MuiButton)({
   width: 100,
   height: 40,
-  color: "#d1d1d1",
+  color: "#ffcc00",
   backgroundColor: "transparent",
   paddingLeft: 5,
   paddingRight: 5,
@@ -22,4 +22,4 @@ const SButton = styled(Button)({
   },
 });
 
-export default SButton;
+export default Button;

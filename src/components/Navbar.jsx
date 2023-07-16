@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Stack, Typography, Button } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import logo from "../assets/logo.png";
 import { Link, useNavigate } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -8,7 +8,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
-import SButton from "./utils/SButton";
+import Button from "./utils/Button";
 import SubNav from "./SubNav";
 
 const Navbar = () => {
@@ -42,12 +42,20 @@ const Navbar = () => {
             sx={{ color: "white" }}
             gap={3}
           >
-            <Typography color={"white"} className="mainNavLInks">
-              Need Help
-            </Typography>
-            <Typography color={"white"} className="mainNavLInks">
-              Explore the Space Foundation
-            </Typography>
+            <Link
+              to={"#"}
+              sx={{ textDecoration: "none" }}
+              className="mainNavLInks"
+            >
+              <Typography color={"white"} className="mainNavLInks">
+                Need Help
+              </Typography>
+            </Link>
+            <Link to={"#"} style={{ textDecoration: "none" }}>
+              <Typography color={"white"} className="mainNavLInks">
+                Explore the Crowd Hope
+              </Typography>
+            </Link>
           </Stack>
           <Stack direction={"row"} alignItems={"center"} gap={3}>
             <FacebookIcon
@@ -71,9 +79,9 @@ const Navbar = () => {
               className="mainNavLInks"
             />
           </Stack>
-          <SButton>
+          <Button>
             <Typography>Login</Typography>
-          </SButton>
+          </Button>
           <Stack justifyContent={"center"} alignItems={"center"}>
             <Typography color={"white"}>123-456-7890</Typography>
             <Typography color={"white"}>

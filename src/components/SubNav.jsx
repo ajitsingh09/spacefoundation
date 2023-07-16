@@ -40,8 +40,8 @@ const SubNav = () => {
         direction="row"
         justifyContent="space-evenly"
         alignContent="center"
-        spacing={2}
-        pl={2}
+        gap={3}
+        pl={3}
         sx={{ color: "white", height: "100%", paddingRight: 10 }}
       >
         <div
@@ -52,6 +52,7 @@ const SubNav = () => {
           }}
           onMouseEnter={() => handleMouseEnter(1)}
           onMouseLeave={() => handleMouseLeave(1)}
+          className="navlink-box"
         >
           <Box
             sx={{
@@ -67,37 +68,50 @@ const SubNav = () => {
                 <Typography
                   alignSelf="center"
                   display="inline-block"
+                  fontFamily={"UbuntuMedium"}
+                  fontSize={16}
                   className="navlink"
-                  fontWeight={"bold"}
                 >
                   OUR WORK
                 </Typography>
-                <KeyboardArrowDownIcon className="navlink-link-downarrow" />
+                <KeyboardArrowDownIcon
+                  className="navlink-link-downarrow"
+                  sx={{ fontSize: 15 }}
+                />
               </Box>
             </Link>
 
             <Stack
               sx={{
+                height: isPopoverOpen(1) ? 160 : 0,
                 opacity: isPopoverOpen(1) ? 1 : 0,
-                height: isPopoverOpen(1) ? "auto" : 0,
-                padding: isPopoverOpen(1) ? 2 : 0,
-                transition: "opacity 0.5s ease-in-out",
+                transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
-                top: 20,
+                top: 47,
+                left: 40,
                 overflow: "hidden",
-                backgroundColor: "rgb(232, 232, 223,1)",
+                backgroundColor: "white",
                 zIndex: 1,
               }}
             >
-              <Link to="#" sx={{ textDecoration: "none" }}>
-                <Typography sx={{ p: 1 }}>Space Group</Typography>
-              </Link>
-              <Link to="/our-story/mission-vision">
-                <Typography sx={{ p: 1 }}>Mission & Vission</Typography>
-              </Link>
-              <Link to="/our-story/awards-recognitions">
-                <Typography sx={{ p: 1 }}>Awards & Recognitions</Typography>
-              </Link>
+              <Stack
+                justifyContent={"center"}
+                gap={1}
+                sx={{ p: 2, width: 140 }}
+              >
+                <Link to="#" className="popperLinks">
+                  <Typography sx={{}}>Space Group</Typography>
+                </Link>
+                <Link to="/our-story/mission-vision" className="popperLinks">
+                  <Typography sx={{}}>Mission & Vission</Typography>
+                </Link>
+                <Link
+                  to="/our-story/awards-recognitions"
+                  className="popperLinks"
+                >
+                  <Typography sx={{}}>Awards & Recognitions</Typography>
+                </Link>
+              </Stack>
             </Stack>
           </Box>
         </div>
@@ -123,51 +137,62 @@ const SubNav = () => {
                 <Typography
                   alignSelf="center"
                   display="inline-block"
-                  fontWeight={"bold"}
+                  fontFamily={"UbuntuMedium"}
+                  fontSize={16}
                 >
                   OUR STORY
                 </Typography>
-                <KeyboardArrowDownIcon className="navlink-link-downarrow" />
+                <KeyboardArrowDownIcon
+                  className="navlink-link-downarrow"
+                  sx={{ fontSize: 15 }}
+                />
               </Box>
             </Link>
 
             <Stack
               sx={{
+                height: isPopoverOpen(2) ? 260 : 0,
                 opacity: isPopoverOpen(2) ? 1 : 0,
-                transition: "opacity 0.5s ease-in-out",
+                transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
-                top: 50,
-                color: "black",
-                backgroundColor: "rgb(232, 232, 223,1)",
-                height: isPopoverOpen(2) ? "auto" : 0,
+                top: 47,
+                left: 40,
                 overflow: "hidden",
-                padding: isPopoverOpen(2) ? 2 : 0,
+                backgroundColor: "white",
                 zIndex: 1,
-                width: 200,
               }}
             >
-              <Link to="#">
-                <Typography sx={{ p: 1 }}>Events</Typography>
-              </Link>
-              <Link to="/our-work/world-space-week">
-                <Typography sx={{ p: 1 }}>World Space Week</Typography>
-              </Link>
-              <Link to="/our-work/all-india-asteroid-search-campaign">
-                <Typography sx={{ p: 1 }}>
-                  All India Aestroid search campaign
-                </Typography>
-              </Link>
-              <Link to="#">
-                <Typography sx={{ p: 1 }}>Projects</Typography>
-              </Link>
-              <Link to="/our-work/sgvpk">
-                <Typography sx={{ p: 1 }}>
-                  SPACE Gram Vigran Prachar Kendra : SGVPK
-                </Typography>
-              </Link>
-              <Link to="#">
-                <Typography sx={{ p: 1 }}>SPACE CALENDER</Typography>
-              </Link>
+              <Stack
+                justifyContent={"center"}
+                gap={1}
+                sx={{ p: 2, width: 140 }}
+              >
+                <Link to="#" className="popperLinks">
+                  <Typography sx={{}}>Events</Typography>
+                </Link>
+                <Link to="/our-work/world-space-week" className="popperLinks">
+                  <Typography sx={{}}>World Space Week</Typography>
+                </Link>
+                <Link
+                  to="/our-work/all-india-asteroid-search-campaign"
+                  className="popperLinks"
+                >
+                  <Typography sx={{}}>
+                    All India Aestroid search campaign
+                  </Typography>
+                </Link>
+                <Link to="#" className="popperLinks">
+                  <Typography sx={{}}>Projects</Typography>
+                </Link>
+                <Link to="/our-work/sgvpk" className="popperLinks">
+                  <Typography sx={{}}>
+                    SPACE Gram Vigran Prachar Kendra : SGVPK
+                  </Typography>
+                </Link>
+                <Link to="#" className="popperLinks">
+                  <Typography sx={{}}>SPACE CALENDER</Typography>
+                </Link>
+              </Stack>
             </Stack>
           </Box>
         </div>
@@ -190,34 +215,45 @@ const SubNav = () => {
                 <Typography
                   alignSelf="center"
                   display="inline-block"
-                  fontWeight={"bold"}
+                  fontFamily={"UbuntuMedium"}
+                  fontSize={16}
                 >
                   OUR IMPACT
                 </Typography>
-                <KeyboardArrowDownIcon className="navlink-link-downarrow" />
+                <KeyboardArrowDownIcon
+                  className="navlink-link-downarrow"
+                  sx={{ fontSize: 15 }}
+                />
               </Box>
             </Link>
 
             <Stack
               sx={{
+                height: isPopoverOpen(3) ? 160 : 0,
                 opacity: isPopoverOpen(3) ? 1 : 0,
-                transition: "opacity 0.5s ease-in-out",
+                transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
-                top: 50,
-                color: "black",
-                backgroundColor: "rgb(232, 232, 223,1)",
-                height: isPopoverOpen(3) ? "auto" : 0,
+                top: 47,
+                left: 40,
                 overflow: "hidden",
-                padding: isPopoverOpen(3) ? 2 : 0,
+                backgroundColor: "white",
                 zIndex: 1,
-                width: 200,
               }}
             >
-              <Link to="/our-impact/fighting-against-light-pollution">
-                <Typography sx={{ p: 1 }}>
-                  FIGHTING AGAINST LIGHT POLLUTION
-                </Typography>
-              </Link>
+              <Stack
+                justifyContent={"center"}
+                gap={1}
+                sx={{ p: 2, width: 140 }}
+              >
+                <Link
+                  to="/our-impact/fighting-against-light-pollution"
+                  className="popperLinks"
+                >
+                  <Typography sx={{}}>
+                    FIGHTING AGAINST LIGHT POLLUTION
+                  </Typography>
+                </Link>
+              </Stack>
             </Stack>
           </Box>
         </div>
@@ -240,35 +276,43 @@ const SubNav = () => {
                 <Typography
                   alignSelf="center"
                   display="inline-block"
-                  fontWeight={"bold"}
+                  fontFamily={"UbuntuMedium"}
+                  fontSize={16}
                 >
                   TAKE ACTIONS
                 </Typography>
-                <KeyboardArrowDownIcon className="navlink-link-downarrow" />
+                <KeyboardArrowDownIcon
+                  className="navlink-link-downarrow"
+                  sx={{ fontSize: 15 }}
+                />
               </Box>
             </Link>
 
             <Stack
               sx={{
+                height: isPopoverOpen(4) ? 160 : 0,
                 opacity: isPopoverOpen(4) ? 1 : 0,
-                transition: "opacity 0.5s ease-in-out",
+                transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
-                top: 50,
-                color: "black",
-                backgroundColor: "rgb(232, 232, 223,1)",
-                height: isPopoverOpen(4) ? "auto" : 0,
+                top: 47,
+                left: 40,
                 overflow: "hidden",
-                padding: isPopoverOpen(4) ? 2 : 0,
+                backgroundColor: "white",
                 zIndex: 1,
-                width: 200,
               }}
             >
-              <Link to="/donate">
-                <Typography sx={{ p: 1 }}>DONATE NOW</Typography>
-              </Link>
-              <Link to="/volunteer">
-                <Typography sx={{ p: 1 }}>VOLUNTEER US</Typography>
-              </Link>
+              <Stack
+                justifyContent={"center"}
+                gap={1}
+                sx={{ p: 2, width: 140 }}
+              >
+                <Link to="/donate" className="popperLinks">
+                  <Typography sx={{}}>DONATE NOW</Typography>
+                </Link>
+                <Link to="/volunteer" className="popperLinks">
+                  <Typography sx={{}}>VOLUNTEER US</Typography>
+                </Link>
+              </Stack>
             </Stack>
           </Box>
         </div>
@@ -291,32 +335,40 @@ const SubNav = () => {
                 <Typography
                   alignSelf="center"
                   display="inline-block"
-                  fontWeight={"bold"}
+                  fontFamily={"UbuntuMedium"}
+                  fontSize={16}
                 >
                   MEDIA
                 </Typography>
-                <KeyboardArrowDownIcon className="navlink-link-downarrow" />
+                <KeyboardArrowDownIcon
+                  className="navlink-link-downarrow"
+                  sx={{ fontSize: 15 }}
+                />
               </Box>
             </Link>
 
             <Stack
               sx={{
+                height: isPopoverOpen(5) ? 160 : 0,
                 opacity: isPopoverOpen(5) ? 1 : 0,
-                transition: "opacity 0.5s ease-in-out",
+                transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
-                top: 50,
-                color: "black",
-                backgroundColor: "rgb(232, 232, 223,1)",
-                height: isPopoverOpen(5) ? "auto" : 0,
+                top: 47,
+                left: 40,
                 overflow: "hidden",
-                padding: isPopoverOpen(5) ? 2 : 0,
+                backgroundColor: "white",
                 zIndex: 1,
-                width: 200,
               }}
             >
-              <Link to="/space-in-news">
-                <Typography sx={{ p: 1 }}>SPACE IN NEWS</Typography>
-              </Link>
+              <Stack
+                justifyContent={"center"}
+                gap={1}
+                sx={{ p: 2, width: 140 }}
+              >
+                <Link to="/space-in-news" className="popperLinks">
+                  <Typography sx={{}}>SPACE IN NEWS</Typography>
+                </Link>
+              </Stack>
             </Stack>
           </Box>
         </div>
@@ -339,35 +391,43 @@ const SubNav = () => {
                 <Typography
                   alignSelf="center"
                   display="inline-block"
-                  fontWeight={"bold"}
+                  fontFamily={"UbuntuMedium"}
+                  fontSize={16}
                 >
                   CONTACT US
                 </Typography>
-                <KeyboardArrowDownIcon className="navlink-link-downarrow" />
+                <KeyboardArrowDownIcon
+                  className="navlink-link-downarrow"
+                  sx={{ fontSize: 15 }}
+                />
               </Box>
             </Link>
 
             <Stack
               sx={{
+                height: isPopoverOpen(6) ? 160 : 0,
                 opacity: isPopoverOpen(6) ? 1 : 0,
-                transition: "opacity 0.5s ease-in-out",
+                transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
-                top: 50,
-                color: "black",
-                backgroundColor: "rgb(232, 232, 223,1)",
-                height: isPopoverOpen(6) ? "auto" : 0,
+                top: 47,
+                left: 40,
                 overflow: "hidden",
-                padding: isPopoverOpen(6) ? 2 : 0,
+                backgroundColor: "white",
                 zIndex: 1,
-                width: 200,
               }}
             >
-              <Link to="#">
-                <Typography sx={{ p: 1 }}>CAREERS</Typography>
-              </Link>
-              <Link to="#">
-                <Typography sx={{ p: 1 }}>GLOBAL</Typography>
-              </Link>
+              <Stack
+                justifyContent={"center"}
+                gap={1}
+                sx={{ p: 2, width: 140 }}
+              >
+                <Link to="#" className="popperLinks">
+                  <Typography sx={{}}>CAREERS</Typography>
+                </Link>
+                <Link to="#" className="popperLinks">
+                  <Typography sx={{}}>GLOBAL</Typography>
+                </Link>
+              </Stack>
             </Stack>
           </Box>
         </div>
@@ -379,7 +439,9 @@ const SubNav = () => {
         sx={{ width: 200, height: "100%", backgroundColor: "white" }}
       >
         <Box onClick={() => navigate("/donate")}>
-          <Typography fontWeight={"bold"}>Donation Now</Typography>
+          <Typography fontFamily={"UbuntuMedium"} fontSize={18}>
+            Donation Now
+          </Typography>
         </Box>
       </Box>
     </Stack>

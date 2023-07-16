@@ -1,8 +1,8 @@
 import React from "react";
-import { Box, Stack, Typography, Button } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 // import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
 // import MyComponent from "../components/Imagehover";
-import SButton from "../components/utils/SButton";
+import Button from "../components/utils/Button";
 import News from "../components/News";
 import spread from "../assets/spread.png";
 import SelectTextFields from "../components/Forms";
@@ -16,7 +16,7 @@ const OurWork = () => {
         paddingTop={"30%"}
         sx={{ backgroundColor: "white" }}
       >
-        <Stack direction={"column"}>
+        <Stack direction={"column"} pb={5}>
           <Stack direction={"row"} justifyContent={"space-evenly"}>
             <Stack width={"50%"} height={"250px"}>
               <Box
@@ -39,9 +39,9 @@ const OurWork = () => {
               </Box>
             </Stack>
             <Box display={"flex"} justifyContent={"right"} width={"40%"}>
-              <SButton>
+              <Button>
                 <Typography color={"black"}>GET MORE</Typography>
-              </SButton>
+              </Button>
             </Box>
           </Stack>
           <Stack
@@ -53,10 +53,6 @@ const OurWork = () => {
           </Stack>
         </Stack>
 
-        <br></br>
-
-        <br></br>
-        <br></br>
         <Stack direction={"column"}>
           <Stack width={"70%"} height={"170px"}>
             <Box
@@ -84,11 +80,9 @@ const OurWork = () => {
               <img src={spread} alt="" />
             </Box>
             <Box paddingTop={"25px"}>
-              <Typography variant="h4" fontWeight={"bold"}>
+              <Typography variant="h4" fontWeight={"bold"} pb={4}>
                 We are experts in Crowdhope services and solutions
               </Typography>
-              <br></br>
-              <br></br>
 
               <SelectTextFields />
               <Stack alignItems="left" paddingTop="20px">

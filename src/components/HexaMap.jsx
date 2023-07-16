@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/system";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
+// import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
 const containerStyle = {
   width: "300px",
@@ -18,11 +18,11 @@ function Form() {
   return (
     <Box>
       {/* Your form fields go here */}
-      <LoadScript googleMapsApiKey="YOUR_API_KEY">
+      {/* <LoadScript googleMapsApiKey="YOUR_API_KEY">
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
           {/* Additional map components or markers can be added here */}
-        </GoogleMap>
-      </LoadScript>
+      {/* </GoogleMap> */}
+      {/* </LoadScript> */}
     </Box>
   );
 }

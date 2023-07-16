@@ -12,6 +12,7 @@ import ylo from "../assets/ylo.png";
 import ylo2 from "../assets/ylo2.png";
 import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
 import Hovercard from "../components/Hovercard";
+
 const OurStory = () => {
   return (
     <>
@@ -350,7 +351,6 @@ const OurStory = () => {
         <Box>
           <Stack textAlign="center" justifyContent="end" height="150px">
             <Typography variant="h4" fontWeight="bold">
-              {" "}
               LATEST CAUSES
             </Typography>
           </Stack>

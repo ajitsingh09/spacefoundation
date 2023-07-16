@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import { Box, Stack, TextField, Button } from "@mui/material";
+import { Box, Stack, TextField } from "@mui/material";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -8,19 +8,15 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
-import SButton from "./utils/SButton";
+import Button from "./utils/Button";
 import MobileScreenShareOutlinedIcon from "@mui/icons-material/MobileScreenShareOutlined";
 import ForwardToInboxOutlinedIcon from "@mui/icons-material/ForwardToInboxOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import Form from "./HexaMap";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
-import Number from "./Number";
-import Spondser from "./Spondser";
 
 const Footer = () => {
   return (
     <Box>
-      <Spondser />
       <Box
         display="flex"
         justifyContent={"center"}
@@ -85,12 +81,12 @@ const Footer = () => {
                   />
                 </Stack>
                 <Box display={"flex"} flexDirection={"column"} gap={"20px"}>
-                  <SButton>
+                  <Button>
                     <Typography>Donate Us</Typography>
-                  </SButton>
-                  <SButton>
+                  </Button>
+                  <Button>
                     <Typography>Volunteer</Typography>
-                  </SButton>
+                  </Button>
                 </Box>
               </Box>
             </Box>
