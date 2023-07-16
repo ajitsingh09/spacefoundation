@@ -45,7 +45,7 @@ const EventSummary = ({ data, today = false }) => {
               alignItems={"center"}
             >
               <Typography variant="body1" sx={{ color: "grey" }}>
-                <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" ,pr:1}} />
+                <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00", pr: 1 }} />
               </Typography>
               <Typography variant="body1" sx={{ color: "grey" }}>
                 {data.time}
@@ -58,7 +58,7 @@ const EventSummary = ({ data, today = false }) => {
               alignItems={"center"}
             >
               <Typography variant="body1" sx={{ color: "grey" }}>
-                <EmailOutlinedIcon sx={{ color: "#ffcc00",paddingRight:1 }} />
+                <EmailOutlinedIcon sx={{ color: "#ffcc00", paddingRight: 1 }} />
               </Typography>
               <Typography variant="body1" sx={{ color: "grey" }}>
                 {data.place}

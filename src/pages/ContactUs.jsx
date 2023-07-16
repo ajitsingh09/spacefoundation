@@ -20,8 +20,7 @@ const ContactUs = () => {
           <Typography variant="h1">Contact US</Typography>
         </Box>
         <Box paddingY={10}>
-
-          <Event/>
+          <Event />
         </Box>
       </>
     </div>

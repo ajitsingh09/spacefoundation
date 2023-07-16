@@ -11,7 +11,7 @@ const Event = () => {
       cover: "../src/assets/img.jpg",
       png: "../src/assets/unlink.png",
       monthyear: "june 2023",
-      Date: 18, 
+      Date: 18,
       StartEnd: "Start: June 18, 2023 | End: June 19, 2023",
 
       time: "10:00 AM - 07:00 PM",
@@ -52,7 +52,7 @@ const Event = () => {
 
   return (
     <Stack justifyContent={"center"} alignItems={"center"} py={8}>
-      <Typography variant="h3"  pb={2}>
+      <Typography variant="h3" pb={2}>
         UPCOMING EVENTS
       </Typography>
       <Stack
@@ -75,7 +75,12 @@ const Event = () => {
           sx={{ color: "#ffcd00", outline: "1px solid #ffcc00" }}
         />
       </Stack>
-      <Typography variant="h6" pb={6} sx={{ width: "60%" }} textAlign={"center"}>
+      <Typography
+        variant="h6"
+        pb={6}
+        sx={{ width: "60%" }}
+        textAlign={"center"}
+      >
         The Just giving charity provides enhanced services over and above what
         the NHS funds. Our upcoming eventN
       </Typography>

@@ -20,7 +20,7 @@ const SGVPK = () => {
           <Typography variant="h1">
             SPACE gyaan vigyan prachar kendra
           </Typography>
-          <MyComponent/>
+          <MyComponent />
         </Box>
       </>
     </div>
