@@ -18,6 +18,7 @@ import Hovercard from "../components/Hovercard";
 import DarkButton from "../components/utils/DarkButton";
 import Button from "../components/utils/Button";
 import HeroSection from "../components/HeroSection";
+import Event from "../components/Event";
 import News from "../components/News";
 import spread from "../assets/spread.png";
 import SelectTextFields from "../components/Forms";
@@ -481,10 +482,11 @@ const Home = () => {
           </Stack>
         </Box>
       </Box>
+      <Event />
       <Box
         width="100%"
         height="1503px"
-        paddingTop={"30%"}
+        // paddingTop={"30%"}
         sx={{ backgroundColor: "white" }}
       >
         <Stack direction={"column"} pb={5}>
