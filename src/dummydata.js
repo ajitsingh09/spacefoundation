@@ -70,3 +70,53 @@ export const news = [
     des: "We help families raise funds for their adoptions by telling their story to a larger ...",
   },
 ];
+export const testi = [
+  {
+    id: 0,
+    cover: "../src/assets/img.jpg",
+    png: "../src/assets/unlink.png",
+    Title: "Sunita Williams",
+    quote: "../src/assets/quote.png",
+    desi: "Astronaut",
+    bigdes:
+      "Everything we do centres on protecting you and your business from risk ,Peace of mind so you can focus on what’s important",
+  },
+  {
+    id: 1,
+    cover: "../src/assets/img.jpg",
+    png: "../src/assets/unlink.png",
+    Title: "Sunita Williams",
+    quote: "../src/assets/quote.png",
+    desi: "Astronaut",
+    bigdes:
+      "Everything we do centres on protecting you and your business from risk ,Peace of mind so you can focus on what’s important",
+  },
+  {
+    id: 2,
+    cover: "../src/assets/img.jpg",
+    png: "../src/assets/unlink.png",
+    Title: "Sunita Williams",
+    quote: "../src/assets/quote.png",
+    desi: "Astronaut",
+    bigdes:
+      "Everything we do centres on protecting you and your business from risk ,Peace of mind so you can focus on what’s important",
+  },
+];
+export const sponser = [
+  {
+    id: 0,
+    cover: "../src/assets/uits-logo.png",
+  },
+  {
+    id: 1,
+    cover: "../src/assets/arcade.png",
+  },
+  {
+    id: 2,
+    cover: "../src/assets/uits-logo.png",
+  },
+  {
+    id: 3,
+    cover: "../src/assets/uits-logo.png",
+  },
+];

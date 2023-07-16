@@ -1,33 +1,35 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import uits from "../assets/uits.png";
+import { sponser } from "../dummydata";
+
 const Spondser = () => {
   return (
-    <Stack width={"100vh"} height={"350px"}>
-      <Box
-        sx={{
-          width: "300px",
-          height: "250px",
-          backgroundColor: "lightgrey",
-          boxShadow: "1px 2px 7px 0px rgb(8, 8, 8)",
-          position: "relative",
-        }}
-      >
-        <Stack justifyContent={"center"} alignItems={"center"}>
-          <img src={uits} alt="" style={{ width: "200px", height: "170px" }} />
-          <Box
-            sx={{
-              content: "''",
-              width: "150px",
-              height: "100px",
-              backgroundColor: "#ffcd00",
-              borderRadius: "50%",
-              position: "absolute",
-              opacity: 0.5,
-            }}
-          ></Box>
-        </Stack>
-      </Box>
+    <Stack
+      width={"100%"}
+      height={"350px"}
+      direction={"row"}
+      gap={"30px"}
+      justifyContent={"center"}
+      paddingTop={"10%"}
+    >
+      {sponser.map((val) => (
+        <Box
+          sx={{
+            width: "270px",
+            height: "200px",
+            backgroundColor: "#EEEEEE",
+            position: "relative",
+          }}
+        >
+          <Stack justifyContent={"center"} alignItems={"center"}>
+            <img
+              src={val.cover}
+              alt=""
+              style={{ width: "200px", height: "170px" }}
+            />
+          </Stack>
+        </Box>
+      ))}
     </Stack>
   );
 };
