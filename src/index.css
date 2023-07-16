@@ -70,3 +70,11 @@ body {
     transform: scale(1);
   }
 }
+/* Dark mode styles */
+#map-container {
+  background-color: #222;
+}
+
+#map-container iframe {
+  filter: invert(90%) hue-rotate(180deg);
+}

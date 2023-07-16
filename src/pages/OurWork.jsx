@@ -1,21 +1,29 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-// import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
-// import MyComponent from "../components/Imagehover";
+
 import Button from "../components/utils/Button";
 import News from "../components/News";
 import spread from "../assets/spread.png";
 import SelectTextFields from "../components/Forms";
-
+import Spondser from "../components/Spondser";
+import Testimonial from "../components/Testimonials";
 const OurWork = () => {
   return (
     <>
       <Box
-        width="100%"
-        height="1503px"
-        paddingTop={"30%"}
-        sx={{ backgroundColor: "white" }}
+        display="flex"
+        justifyContent={"center"}
+        alignItems={"center"}
+        sx={{
+          width: "100%",
+          height: "100vh",
+          color: "white",
+          backgroundColor: "black",
+        }}
       >
+        <Typography variant="h1">Our Work</Typography>
+      </Box>
+      <Box width="100%" height="1503px" sx={{ backgroundColor: "white" }}>
         <Stack direction={"column"} pb={5}>
           <Stack direction={"row"} justifyContent={"space-evenly"}>
             <Stack width={"50%"} height={"250px"}>
@@ -102,6 +110,18 @@ const OurWork = () => {
             </Box>
           </Stack>
         </Stack>
+      </Box>
+      <Box>
+        <Testimonial />
+      </Box>
+      <Box
+        sx={{
+          width: "100%",
+          height: "100vh",
+          backgroundColor: "white",
+        }}
+      >
+        <Spondser />
       </Box>
     </>
   );

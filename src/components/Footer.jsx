@@ -13,6 +13,7 @@ import MobileScreenShareOutlinedIcon from "@mui/icons-material/MobileScreenShare
 import ForwardToInboxOutlinedIcon from "@mui/icons-material/ForwardToInboxOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
+import Map from "./HexaMap";
 
 const Footer = () => {
   return (
@@ -91,13 +92,8 @@ const Footer = () => {
               </Box>
             </Box>
             <Box width={"33%"}>
-              <Box
-                width={"350px"}
-                height={"500px"}
-                // zxcaavddvcsc
-              >
-                <br></br>
-                {/* <Form/> */}
+              <Box width={"350px"} height={"500px"}>
+                <Map />
               </Box>
             </Box>
             <Box
