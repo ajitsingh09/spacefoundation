@@ -18,7 +18,9 @@ body {
 }
 .mainNavLInks {
   transition-duration: 500ms;
+  text-decoration: none;
+  color: grey;
 }
 .mainNavLInks:hover {
-  color: #ffcc00;
+  color: #ffcd00;
 }

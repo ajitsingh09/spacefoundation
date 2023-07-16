@@ -46,7 +46,7 @@ const Navbar = () => {
               Need Help
             </Typography>
             <Typography color={"white"} className="mainNavLInks">
-              Explore the crowd Hope
+              Explore the Space Foundation
             </Typography>
           </Stack>
           <Stack direction={"row"} alignItems={"center"} gap={3}>

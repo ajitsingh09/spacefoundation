@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-import { card } from "../dummydata";
-import Progressbar from "./Progressbar";
-
-const Hovercard = () => {
+import { news } from "../dummydata";
+import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+const News = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
 
   const handleHover = (index) => {
@@ -13,11 +12,12 @@ const Hovercard = () => {
 
   return (
     <>
-      {card.map((val, index) => (
+      {news.map((val, index) => (
         <Box
           key={val.id}
           sx={{
-            height: "500px",
+            width: "350px",
+            height: "450px",
             zIndex: "0",
             border: "1px solid #dbdbd9",
             borderRadius: "10px",
@@ -29,7 +29,7 @@ const Hovercard = () => {
           <Box
             sx={{
               position: "relative",
-              width: "300px",
+              width: "350px",
               height: "200px",
             }}
             onMouseEnter={() => handleHover(index)}
@@ -40,7 +40,7 @@ const Hovercard = () => {
                 position: "absolute",
                 top: 0,
                 left: 0,
-                width: "300px",
+                width: "350px",
                 height: "200px",
                 backgroundColor:
                   hoveredIndex === index
@@ -82,12 +82,12 @@ const Hovercard = () => {
               justifyContent={"center"}
               alignItems={"center"}
               height={"200px"}
-              width={"300px"}
+              width={"350px"}
             >
               <img
                 src={val.cover}
                 alt="First Image"
-                width={"300px"}
+                width={"350px"}
                 height={"200px"}
                 style={{
                   position: "relative",
@@ -96,20 +96,23 @@ const Hovercard = () => {
                 }}
               />
             </Box>
-            <Stack width="300px" justifyContent="center" alignItems="center">
+            <Stack width="350px" justifyContent="center" alignItems="center">
               <Box
                 width="230px"
-                textAlign="center"
+                textAlign="left"
                 paddingTop="20px"
                 display="flex"
                 flexDirection="column"
                 rowGap="19px"
               >
-                <Progressbar raised={val.Raised} goals={val.Goals} />
-                <Typography variant="h7">
-                  ${val.Raised} Raised / ${val.Goals} Goals
-                </Typography>
-                <Typography fontWeight="bold">{val.des}</Typography>
+                <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
+                  <Box display={"flex"} flexDirection={"row"} gap={"10px"}>
+                    <CalendarMonthOutlinedIcon />
+                    <Typography variant="h7">{val.date}</Typography>
+                  </Box>
+                  <Typography fontWeight="bold">{val.Title}</Typography>
+                  <Typography>{val.des}</Typography>
+                </Box>
               </Box>
             </Stack>
             <Stack alignItems="center" paddingTop="20px">
@@ -123,7 +126,7 @@ const Hovercard = () => {
                   fontWeight: "bold",
                 }}
               >
-                DONATION
+                READ MORE
               </Button>
             </Stack>
           </Box>
@@ -133,4 +136,4 @@ const Hovercard = () => {
   );
 };
 
-export default Hovercard;
+export default News;
