@@ -9,7 +9,7 @@ const SButton = styled(Button)({
   paddingLeft: 5,
   paddingRight: 5,
   borderRadius: 0,
-  transition: "background-color 0.3s ease",
+  transition: "background-color 0.8s ease-out",
   outline: "1px solid #d1d1d1",
   outlineWidth: 0.5,
   textTransform: "none",
