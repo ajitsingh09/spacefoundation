@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Link, useNavigate } from "react-router-dom";
-import { Box, Stack, Typography } from "@mui/material";
-import DarkButton from "./utils/DarkButton";
+import { Box, Stack, Typography, Button } from "@mui/material";
+import { color } from "@mui/system";
 
 const SubNav = () => {
   const navigate = useNavigate();
@@ -433,7 +433,41 @@ const SubNav = () => {
           </Box>
         </div>
       </Stack>
-      
+      <Box
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        sx={{ width: "230px", height: "100%" }}
+      >
+        <Box onClick={() => navigate("/")}>
+          {/* <Typography fontFamily={"UbuntuMedium"} fontSize={18}>
+          <a href="http://www.nicdarkthemes.com/themes/charity-foundation/wp/demo/charity-foundation/nd-donation/causes-01" style={{ textDecoration: "none", color:"white", }}>
+            Donate Now
+            </a>
+            
+          </Typography> */}
+          <Stack alignItems="center">
+            <Button
+              variant="contained"
+              sx={{
+                width: "230px",
+                height: "70px",
+                color: "white",
+                borderRadius: "0%",
+                backgroundColor: "Black",
+                "&:hover": { backgroundColor: "white", color: "black" },
+              }}
+            >
+              <Link to="http://www.nicdarkthemes.com/themes/charity-foundation/wp/demo/charity-foundation/nd-donation/causes-01" className="btn_hover">
+              Donate Now
+
+              </Link>
+              
+             
+            </Button>
+          </Stack>
+        </Box>
+      </Box>
     </Stack>
   );
 };
