@@ -15,7 +15,6 @@ import ylo from "../assets/ylo.png";
 import ylo2 from "../assets/ylo2.png";
 import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
 import Hovercard from "../components/Hovercard";
-import DarkButton from "../components/utils/DarkButton";
 import Button from "../components/utils/Button";
 import HeroSection from "../components/HeroSection";
 import Event from "../components/Event";
@@ -24,6 +23,7 @@ import spread from "../assets/spread.png";
 import SelectTextFields from "../components/Forms";
 import Number from "../components/Number";
 import Spondser from "../components/Spondser";
+import Testimonial from "../components/Testimonials";
 
 const Home = () => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -104,10 +104,9 @@ const Home = () => {
         direction="row"
         sx={{
           backgroundColor: "white",
-          height: "100vh",
         }}
       >
-        <Stack sx={{ backgroundColor: "white", width: "60%", height: "100vh" }}>
+        <Stack sx={{ backgroundColor: "white", width: "60%",  }}>
           <Box
             sx={{
               display: "flex",
@@ -208,12 +207,19 @@ const Home = () => {
           <Typography variant="h7" fontWeight="bold" textAlign="center">
             How do you end global poverty? You start with kids.
           </Typography>
-          <Typography textAlign="center" marginTop="10px">
-            <a href="/" style={{ textDecoration: "none", textAlign: "center" }}>
+          <Stack direction={"row"} justifyContent={"center"} sx={{
+            "&:hover":{color:"#ffcd00"}
+          }}>
+            
+          <Typography textAlign="center" marginTop="10px" >
+            <a href="/" className="mainNavLInks" style={{ textDecoration: "none", textAlign: "center", color:"black"}}>
               Meet more kids{" "}
             </a>
-            <ArrowForwardIcon color="#ffcd00" />
+            
           </Typography>
+          <Box display={"flex"} alignItems={"end"}>
+            <ArrowForwardIcon color="#ffcd00" /></Box>
+          </Stack>
         </Stack>
       </Stack>
       {/* /////////////////////////////////////////////// */}
@@ -232,7 +238,7 @@ const Home = () => {
         <Box sx={{ padding: "10px 0 0 40px" }}>
           <Typography
             variant="H5"
-            fontWeight="400"
+            fontWeight="bold"
             color="#ffcd00"
             fontSize="18px"
           >
@@ -258,7 +264,7 @@ const Home = () => {
           ></Typography>
           <Typography variant="h6" paddingTop="40PX">
             We are Space foundation / non-profit/ fundraising/ NGO
-            organizations. Our crowdhope activities are taken place around the
+            organizations. Our Space Foundation activities are taken place around the
             world,let contribute to them with us by your hand to be a better
             life.
           </Typography>
@@ -277,7 +283,7 @@ const Home = () => {
           }}
         >
           <Typography padding="50px 0 0 70px">
-            Croudhelp founded 25 years ago as the American Institute of
+            Space Foundation founded 25 years ago as the American Institute of
             Philanthropy (AIP), is America’s most independent, assertive charity
             watchdog . CharityWatch does not merely repeat what a charity
             reports using simplistic or automated formulas.
@@ -431,7 +437,7 @@ const Home = () => {
       </Box>
 
       {/* //////////////////////////////////////////////// */}
-      <Box width="100%" height="1203px" sx={{ backgroundColor: "white" }}>
+      <Box width="100%" height="fit-content" sx={{ backgroundColor: "white" }}>
         <Box>
           <Stack textAlign="center" justifyContent="end" height="150px">
             <Typography variant="h4" fontWeight="bold">
@@ -483,13 +489,15 @@ const Home = () => {
         </Box>
       </Box>
       <Event />
+          <Testimonial/>
+
       <Box
         width="100%"
         height="1503px"
         // paddingTop={"30%"}
         sx={{ backgroundColor: "white" }}
       >
-        <Stack direction={"column"} pb={5}>
+        <Stack direction={"column"} paddingTop={"5%"}>
           <Stack direction={"row"} justifyContent={"space-evenly"}>
             <Stack width={"50%"} height={"250px"}>
               <Box
@@ -519,14 +527,14 @@ const Home = () => {
           </Stack>
           <Stack
             direction={"row "}
-            gap={"20px"}
+            gap={"15px"}
             justifyContent={"space-evenly"}
           >
             <News />
           </Stack>
         </Stack>
 
-        <Stack direction={"column"}>
+        <Stack direction={"column"} paddingTop={"5%"}>
           <Stack width={"70%"} height={"170px"}>
             <Box
               display={"flex"}
@@ -535,7 +543,7 @@ const Home = () => {
               padding={"10px 0 0 50px"}
             >
               <Typography variant="h3" fontWeight={"bold"}>
-                Our mission is to make them feel safe, explore the Crowdhope
+                Our mission is to make them feel safe, explore the Space Foundation
                 Charity{" "}
               </Typography>
               <Box
@@ -554,7 +562,7 @@ const Home = () => {
             </Box>
             <Box paddingTop={"25px"}>
               <Typography variant="h4" fontWeight={"bold"} pb={4}>
-                We are experts in Crowdhope services and solutions
+                We are experts in Space Foundation services and solutions
               </Typography>
 
               <SelectTextFields />
