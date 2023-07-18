@@ -105,18 +105,22 @@ export const testi = [
 export const sponser = [
   {
     id: 0,
-    cover: "../src/assets/uits-logo.png",
+    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/donation.png",
+    Name:"Volunteer",
   },
   {
     id: 1,
-    cover: "../src/assets/arcade.png",
+    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    Name:"Volunteer",
   },
   {
     id: 2,
-    cover: "../src/assets/uits-logo.png",
+    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/ballons.png",
+    Name:"Volunteer",
   },
   {
     id: 3,
-    cover: "../src/assets/uits-logo.png",
+    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/people.png",
+    Name:"Volunteer",
   },
 ];
