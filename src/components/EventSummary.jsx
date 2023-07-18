@@ -15,7 +15,7 @@ const EventSummary = ({ data, today = false }) => {
         sx={{ borderRight: "1px solid #bdbdbd", borderRightWidth: 2 }}
       >
         <Typography variant="h2" fontWeight={"bold"}>
-          {data.Date}
+          {data?.Date}
         </Typography>
         <Typography
           mb={1}
@@ -28,7 +28,7 @@ const EventSummary = ({ data, today = false }) => {
           }}
         ></Typography>
         <Typography variant="body1" pb={1}>
-          {data.monthyear}
+          {data?.monthyear}
         </Typography>
       </Stack>
       <Stack pl={3}>
@@ -48,7 +48,7 @@ const EventSummary = ({ data, today = false }) => {
                 <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00", pr: 1 }} />
               </Typography>
               <Typography variant="body1" sx={{ color: "grey" }}>
-                {data.time}
+                {data?.time}
               </Typography>
             </Stack>
 
@@ -61,17 +61,17 @@ const EventSummary = ({ data, today = false }) => {
                 <EmailOutlinedIcon sx={{ color: "#ffcc00", paddingRight: 1 }} />
               </Typography>
               <Typography variant="body1" sx={{ color: "grey" }}>
-                {data.place}
+                {data?.place}
               </Typography>
             </Stack>
           </Stack>
         ) : (
           <Typography variant="body1" sx={{ color: "grey" }}>
-            {data.StartEnd}
+            {data?.StartEnd}
           </Typography>
         )}
         <Typography variant="subtitle1" fontWeight={"bold"}>
-          {data.title}
+          {data?.title}
         </Typography>
       </Stack>
     </Stack>

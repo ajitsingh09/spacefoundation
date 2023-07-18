@@ -127,7 +127,7 @@ const Footer = () => {
                 <Box display={"flex"} flexDirection={"row"} gap={"15px"}>
                   <ContactsOutlinedIcon />
                   <Stack className="mainNavLInks">
-                    <Typography style={{color:"white"}}>Address</Typography>
+                    <Typography style={{ color: "white" }}>Address</Typography>
                     <Typography>
                       <Link
                         to="/"
