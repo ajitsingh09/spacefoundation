@@ -457,13 +457,14 @@ const SubNav = () => {
                 backgroundColor: "Black",
                 "&:hover": { backgroundColor: "white", color: "black" },
               }}
+              className="donate-btn"
             >
-              <Link to="http://www.nicdarkthemes.com/themes/charity-foundation/wp/demo/charity-foundation/nd-donation/causes-01" className="btn_hover">
-              Donate Now
-
+              <Link
+                to="http://www.nicdarkthemes.com/themes/charity-foundation/wp/demo/charity-foundation/nd-donation/causes-01"
+                className="btn_hover"
+              >
+                Donate Now
               </Link>
-              
-             
             </Button>
           </Stack>
         </Box>

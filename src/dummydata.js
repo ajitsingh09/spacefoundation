@@ -4,7 +4,8 @@ export const card = [
     Raised: "46303",
     Goals: "95000",
     des: "Help sarah go to primary school next year",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
   },
   {
@@ -12,7 +13,8 @@ export const card = [
     Raised: "54303",
     Goals: "95679",
     des: "Help sarah go to primary school next year",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
   },
   {
@@ -20,7 +22,8 @@ export const card = [
     Raised: "34303",
     Goals: "59000",
     des: "Help sarah go to primary school next year",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
   },
   {
@@ -28,14 +31,52 @@ export const card = [
     Raised: "38303",
     Goals: "54000",
     des: "Help sarah go to primary school next year",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+  },
+  {
+    id: 4,
+    Raised: "38303",
+    Goals: "54000",
+    des: "Help sarah go to primary school next year",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+  },
+  {
+    id: 534,
+    Raised: "38303",
+    Goals: "54000",
+    des: "Help sarah go to primary school next year",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+  },
+  {
+    id: 2346,
+    Raised: "38303",
+    Goals: "54000",
+    des: "Help sarah go to primary school next year",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+  },
+  {
+    id: 5,
+    Raised: "38303",
+    Goals: "54000",
+    des: "Help sarah go to primary school next year",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
   },
 ];
 export const hover = [
   {
     id: 0,
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
     monthyear: "june 2023",
     Date: "31",
@@ -47,7 +88,8 @@ export const hover = [
 export const news = [
   {
     id: 0,
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
     date: "August 12 2019",
     Title: "First child dies of Ebola in new outbreak in Uganda",
@@ -55,7 +97,8 @@ export const news = [
   },
   {
     id: 1,
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     date: "August 12 2019",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
     Title: "First child dies of Ebola in new outbreak in Uganda",
@@ -63,7 +106,8 @@ export const news = [
   },
   {
     id: 2,
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     date: "August 12 2019",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
     Title: "First child dies of Ebola in new outbreak in Uganda",
@@ -73,29 +117,35 @@ export const news = [
 export const testi = [
   {
     id: 0,
-    cover: "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTXMMO8k4M55zkMLrWN_cSQ61L5v8SZQrBY31DdyuIfwCshamFhcKVtsWAL8odCJOw0wxLUrrWw9wj5-CY",
+    cover:
+      "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTXMMO8k4M55zkMLrWN_cSQ61L5v8SZQrBY31DdyuIfwCshamFhcKVtsWAL8odCJOw0wxLUrrWw9wj5-CY",
     Title: "Sunita Williams",
-    quote: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/icon-quote.png",
+    quote:
+      "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/icon-quote.png",
     desi: "Astronaut",
     bigdes:
       "Everything we do centres on protecting you and your business from risk ,Peace of mind so you can focus on what’s important",
   },
   {
     id: 1,
-    cover: "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTXMMO8k4M55zkMLrWN_cSQ61L5v8SZQrBY31DdyuIfwCshamFhcKVtsWAL8odCJOw0wxLUrrWw9wj5-CY",
+    cover:
+      "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTXMMO8k4M55zkMLrWN_cSQ61L5v8SZQrBY31DdyuIfwCshamFhcKVtsWAL8odCJOw0wxLUrrWw9wj5-CY",
     png: "../src/assets/unlink.png",
     Title: "Sunita Williams",
-    quote: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/icon-quote.png",
+    quote:
+      "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/icon-quote.png",
     desi: "Astronaut",
     bigdes:
       "Everything we do centres on protecting you and your business from risk ,Peace of mind so you can focus on what’s important",
   },
   {
     id: 2,
-    cover: "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTXMMO8k4M55zkMLrWN_cSQ61L5v8SZQrBY31DdyuIfwCshamFhcKVtsWAL8odCJOw0wxLUrrWw9wj5-CY",
+    cover:
+      "https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTXMMO8k4M55zkMLrWN_cSQ61L5v8SZQrBY31DdyuIfwCshamFhcKVtsWAL8odCJOw0wxLUrrWw9wj5-CY",
     png: "../src/assets/unlink.png",
     Title: "Sunita Williams",
-    quote: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/icon-quote.png",
+    quote:
+      "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/icon-quote.png",
     desi: "Astronaut",
     bigdes:
       "Everything we do centres on protecting you and your business from risk ,Peace of mind so you can focus on what’s important",
@@ -104,22 +154,51 @@ export const testi = [
 export const sponser = [
   {
     id: 0,
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/donation.png",
-    Name:"Volunteer",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/donation.png",
+    Name: "Volunteer",
   },
   {
     id: 1,
     cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    Name:"Help Life",
+    Name: "Help Life",
   },
   {
     id: 2,
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/ballons.png",
-    Name:"Give Thoughtfully",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/ballons.png",
+    Name: "Give Thoughtfully",
   },
   {
     id: 3,
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/people.png",
-    Name:"Donate Now",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/people.png",
+    Name: "Donate Now",
+  },
+];
+export const images = [
+  {
+    id: 0,
+    img: "../src/assets/im2.jpg",
+  },
+  {
+    id: 1,
+    img: "../src/assets/im3.jpg",
+  },
+  {
+    id: 2,
+    img: "../src/assets/im4.jpg",
+  },
+  {
+    id: 3,
+    img: "../src/assets/im5.jpg",
+  },
+  {
+    id: 4,
+    img: "../src/assets/im2.jpg",
+  },
+  {
+    id: 5,
+    img: "../src/assets/im3s.jpg",
   },
 ];

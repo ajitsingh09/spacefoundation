@@ -1,5 +1,7 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Stack } from "@mui/material";
+import Imageslider from "../components/Imageslider";
+import Hovercard from "../components/Hovercard";
 
 const OurImpact = () => {
   return (
@@ -18,6 +20,10 @@ const OurImpact = () => {
         >
           <Typography variant="h1">Impact Stories</Typography>
         </Box>
+        {/* <Imageslider/> */}
+        <Stack direction={"row"}>
+          <Hovercard />
+        </Stack>
       </>
     </div>
   );

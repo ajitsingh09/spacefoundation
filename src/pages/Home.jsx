@@ -106,7 +106,7 @@ const Home = () => {
           backgroundColor: "white",
         }}
       >
-        <Stack sx={{ backgroundColor: "white", width: "60%",  }}>
+        <Stack sx={{ backgroundColor: "white", width: "60%" }}>
           <Box
             sx={{
               display: "flex",
@@ -207,18 +207,29 @@ const Home = () => {
           <Typography variant="h7" fontWeight="bold" textAlign="center">
             How do you end global poverty? You start with kids.
           </Typography>
-          <Stack direction={"row"} justifyContent={"center"} sx={{
-            "&:hover":{color:"#ffcd00"}
-          }}>
-            
-          <Typography textAlign="center" marginTop="10px" >
-            <a href="/" className="mainNavLInks" style={{ textDecoration: "none", textAlign: "center", color:"black"}}>
-              Meet more kids{" "}
-            </a>
-            
-          </Typography>
-          <Box display={"flex"} alignItems={"end"}>
-            <ArrowForwardIcon color="#ffcd00" /></Box>
+          <Stack
+            direction={"row"}
+            justifyContent={"center"}
+            sx={{
+              "&:hover": { color: "#ffcd00" },
+            }}
+          >
+            <Typography textAlign="center" marginTop="10px">
+              <a
+                href="/"
+                className="mainNavLInks"
+                style={{
+                  textDecoration: "none",
+                  textAlign: "center",
+                  color: "black",
+                }}
+              >
+                Meet more kids{" "}
+              </a>
+            </Typography>
+            <Box display={"flex"} alignItems={"end"}>
+              <ArrowForwardIcon color="#ffcd00" />
+            </Box>
           </Stack>
         </Stack>
       </Stack>
@@ -264,9 +275,9 @@ const Home = () => {
           ></Typography>
           <Typography variant="h6" paddingTop="40PX">
             We are Space foundation / non-profit/ fundraising/ NGO
-            organizations. Our Space Foundation activities are taken place around the
-            world,let contribute to them with us by your hand to be a better
-            life.
+            organizations. Our Space Foundation activities are taken place
+            around the world,let contribute to them with us by your hand to be a
+            better life.
           </Typography>
         </Box>
       </Stack>
@@ -489,7 +500,7 @@ const Home = () => {
         </Box>
       </Box>
       <Event />
-          <Testimonial/>
+      <Testimonial />
 
       <Box
         width="100%"
@@ -543,8 +554,8 @@ const Home = () => {
               padding={"10px 0 0 50px"}
             >
               <Typography variant="h3" fontWeight={"bold"}>
-                Our mission is to make them feel safe, explore the Space Foundation
-                Charity{" "}
+                Our mission is to make them feel safe, explore the Space
+                Foundation Charity{" "}
               </Typography>
               <Box
                 sx={{

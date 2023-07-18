@@ -48,11 +48,10 @@ const Spondser = () => {
               }}
             ></Box>
             <Box>
-            <Typography variant="h5">{val.Name}</Typography>
-          </Box>
+              <Typography variant="h5">{val.Name}</Typography>
+            </Box>
           </Stack>
         </Box>
-        
       ))}
     </Stack>
   );

@@ -70,7 +70,7 @@ const Testimonial = () => {
                 >
                   <EjectIcon
                     sx={{
-                      color: isHovered===index ? "#ffcd00" : "#dbdbd9",
+                      color: isHovered === index ? "#ffcd00" : "#dbdbd9",
                     }}
                   />
                 </Box>

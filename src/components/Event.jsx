@@ -8,8 +8,9 @@ const Event = () => {
   const hover = [
     {
       id: 0,
-      cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+      cover:
+        "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+      png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
       monthyear: "june 2023",
       Date: 18,
       StartEnd: "Start: June 18, 2023 | End: June 19, 2023",
@@ -20,8 +21,9 @@ const Event = () => {
     },
     {
       id: 1,
-      cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+      cover:
+        "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+      png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
       monthyear: "june 2023",
       Date: 17,
       StartEnd: "Start: June 17, 2023 | End: June 17, 2023",
@@ -31,8 +33,9 @@ const Event = () => {
     },
     {
       id: 2,
-      cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+      cover:
+        "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+      png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
       monthyear: "june 2023",
       Date: 16,
       StartEnd: "Start: June 16, 2023 | End: June 16, 2023",
@@ -45,8 +48,11 @@ const Event = () => {
     const today = new Date();
     const date = today.getDate();
     const index = hover.findIndex((item) => item.Date === date);
-    if (index) {
+    if (index !== -1 && index) {
       setCurrentIndex(index);
+      console.log(index, "indexvalue");
+    } else {
+      setCurrentIndex(0);
     }
   }, [currentIndex]);
 
