@@ -7,17 +7,18 @@ const Map = () => {
   };
 
   return (
-    <div>
+    <div id="map-container">
       <iframe
         title="Google Map"
-        src={`
-        https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBI7ULVyqjdnlnMJMP9qAHAF6VGIRxVOgs&center=28.588130358653963,77.0538014&zoom=17&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x242f3e&style=element:labels.text.fill%7Ccolor:0x746855&style=element:labels.text.stroke%7Ccolor:0x242f3e&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:poi.park%7Celement:geometry%7Ccolor:0x263c3f&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x6b9a76&style=feature:road%7Celement:geometry%7Ccolor:0x38414e&style=feature:road%7Celement:geometry.stroke%7Ccolor:0x212a37&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x9ca5b3&style=feature:road.highway%7Celement:geometry%7Ccolor:0x746855&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0x1f2835&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0xf3d19c&style=feature:transit%7Celement:geometry%7Ccolor:0x2f3948&style=feature:transit.station%7Celement:labels.text.fill%7Ccolor:0xd59563&style=feature:water%7Celement:geometry%7Ccolor:0x17263c&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x515c6d&style=feature:water%7Celement:labels.text.stroke%7Ccolor:0x17263c&size=480x360
-      `}
+        src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.3892856143825!2d77.05106897397663!3d28.58809618609996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b06e184bec1%3A0x30868de87417b43c!2sSPACE%20Foundation!5e0!3m2!1sen!2sin!4v1689673350091!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade`
+        }
         width="100%"
-        height="400"
+        height="300"
         style={mapStyle}
         allowFullScreen
-      ></iframe>
+      >
+
+      </iframe>
     </div>
   );
 };

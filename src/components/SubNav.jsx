@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Link, useNavigate } from "react-router-dom";
 import { Box, Stack, Typography } from "@mui/material";
+import DarkButton from "./utils/DarkButton";
 
 const SubNav = () => {
   const navigate = useNavigate();
@@ -432,20 +433,7 @@ const SubNav = () => {
           </Box>
         </div>
       </Stack>
-      <Box
-        display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        sx={{ width: 200, height: "100%", backgroundColor: "white" }}
-      >
-        <Box onClick={() => navigate("/")}>
-          <Typography fontFamily={"UbuntuMedium"} fontSize={18}>
-          <a href="http://www.nicdarkthemes.com/themes/charity-foundation/wp/demo/charity-foundation/nd-donation/causes-01" style={{ textDecoration: "none", color:"black"}}>
-            Donate Now
-            </a>
-          </Typography>
-        </Box>
-      </Box>
+      
     </Stack>
   );
 };
