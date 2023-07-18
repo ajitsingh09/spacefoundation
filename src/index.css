@@ -70,11 +70,25 @@ body {
     transform: scale(1);
   }
 }
-/* Dark mode styles */
-#map-container {
-  background-color: #222;
-}
 
-#map-container iframe {
-  filter: invert(90%) hue-rotate(180deg);
-}
+    #map-container {
+        position: relative;
+    }
+
+    #map-container iframe {
+        width: 100%;
+        position: absolute;
+        background-color: #454545;
+        height: 80%;
+        border-radius: 50%;
+
+    }
+
+    .btn_hover{
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    }
+    .btn_hover:hover{
+      color: #0e0e0e;
+    }
