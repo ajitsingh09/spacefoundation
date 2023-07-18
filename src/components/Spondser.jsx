@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import { sponser } from "../dummydata";
+import { borderRadius } from "@mui/system";
 
 const Spondser = () => {
   return (
@@ -21,14 +22,37 @@ const Spondser = () => {
             position: "relative",
           }}
         >
-          <Stack justifyContent={"center"} alignItems={"center"}>
+          <Stack
+            justifyContent={"center"}
+            alignItems={"center"}
+            position={"relative"}
+            gap={"10px"}
+          >
             <img
               src={val.cover}
               alt=""
-              style={{ width: "200px", height: "170px" }}
+              style={{ width: "126px", height: "116px", paddingTop: "8%" }}
             />
+            <Box
+              sx={{
+                content: "''",
+                backgroundColor: "rgba(255, 205, 0, 0.7)",
+                width: "58px",
+                height: "58px",
+                position: "absolute",
+                borderRadius: "50px",
+                left: "47px",
+                bottom: "35px",
+
+                zIndex: "0",
+              }}
+            ></Box>
+            <Box>
+            <Typography variant="h5">{val.Name}</Typography>
+          </Box>
           </Stack>
         </Box>
+        
       ))}
     </Stack>
   );
