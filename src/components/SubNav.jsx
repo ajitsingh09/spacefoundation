@@ -438,9 +438,11 @@ const SubNav = () => {
         alignItems={"center"}
         sx={{ width: 200, height: "100%", backgroundColor: "white" }}
       >
-        <Box onClick={() => navigate("/donate")}>
+        <Box onClick={() => navigate("/")}>
           <Typography fontFamily={"UbuntuMedium"} fontSize={18}>
-            Donation Now
+          <a href="http://www.nicdarkthemes.com/themes/charity-foundation/wp/demo/charity-foundation/nd-donation/causes-01" style={{ textDecoration: "none", color:"black"}}>
+            Donate Now
+            </a>
           </Typography>
         </Box>
       </Box>

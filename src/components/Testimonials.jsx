@@ -5,8 +5,8 @@ import EjectIcon from "@mui/icons-material/Eject";
 const Testimonial = () => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const HandleHover = () => {
-    setIsHovered(!isHovered);
+  const HandleHover = (index) => {
+    setIsHovered(index);
   };
 
   return (
@@ -19,7 +19,7 @@ const Testimonial = () => {
         gap={"40px"}
         sx={{ backgroundColor: "black", paddingTop: "10%" }}
       >
-        {testi.map((val) => (
+        {testi.map((val, index) => (
           <Box display={"flex"}>
             <Box display={"flex"} flexDirection={"column"} gap={"40px"}>
               <Box display={"flex"} flexDirection={"row"} gap={"10px"}>
@@ -47,8 +47,8 @@ const Testimonial = () => {
                 </Box>
               </Box>
               <Box
-                onMouseEnter={HandleHover}
-                onMouseLeave={HandleHover}
+                onMouseEnter={() => HandleHover(index)}
+                onMouseLeave={() => HandleHover(-1)}
                 key={val.id}
                 sx={{
                   width: "350px",
@@ -70,7 +70,7 @@ const Testimonial = () => {
                 >
                   <EjectIcon
                     sx={{
-                      color: isHovered ? "#ffcd00" : "#dbdbd9",
+                      color: isHovered===index ? "#ffcd00" : "#dbdbd9",
                     }}
                   />
                 </Box>
