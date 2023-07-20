@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import img from "../assets/img.jpg";
+import img from "../../../assets/img.jpg";
 
 const VideoPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);

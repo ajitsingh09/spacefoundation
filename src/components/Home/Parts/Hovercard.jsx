@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-import { card } from "../dummydata";
+import { card } from "../../../dummydata";
 import Progressbar from "./Progressbar";
 import { motion } from "framer-motion";
 import { useRef, useEffect } from "react";

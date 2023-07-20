@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-import { news } from "../dummydata";
+import { news } from "../../../dummydata";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
-const News = () => {
+const NewsSlider = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
 
   const handleHover = (index) => {
@@ -136,4 +136,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default NewsSlider;

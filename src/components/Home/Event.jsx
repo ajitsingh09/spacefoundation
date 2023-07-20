@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Stack, Typography } from "@mui/material";
 import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
-import ImageCard from "./ImageCard";
-import EventSummary from "./EventSummary";
+import ImageCard from "./Parts/ImageCard";
+import EventSummary from "./Parts/EventSummary";
 const Event = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const hover = [

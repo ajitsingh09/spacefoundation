@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import { sponser } from "../dummydata";
-import { borderRadius } from "@mui/system";
+import { sponser } from "../../dummydata";
 
 const Spondser = () => {
   return (

@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import MyComponent from "../components/Imagehover";
 
 const SGVPK = () => {
   return (
@@ -20,7 +19,6 @@ const SGVPK = () => {
           <Typography variant="h1">
             SPACE gyaan vigyan prachar kendra
           </Typography>
-          <MyComponent />
         </Box>
       </>
     </div>

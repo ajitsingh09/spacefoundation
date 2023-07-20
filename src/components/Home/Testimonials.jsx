@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import { testi } from "../dummydata";
+import { testi } from "../../dummydata";
 import EjectIcon from "@mui/icons-material/Eject";
 const Testimonial = () => {
   const [isHovered, setIsHovered] = useState(false);
