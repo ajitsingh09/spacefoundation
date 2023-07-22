@@ -12,7 +12,6 @@ const AboutSection = () => {
           width: "100%",
           height: "fit-content",
           paddingTop: "5%",
-          backgroundColor: "red",
         }}
       >
         <Box
@@ -60,7 +59,7 @@ const AboutSection = () => {
       </Stack>
       <Stack
         direction="row"
-        sx={{ width: "100%", height: "fit-content", backgroundColor: "red" }}
+        sx={{ width: "100%", height: "fit-content"}}
       >
         <Box
           sx={{

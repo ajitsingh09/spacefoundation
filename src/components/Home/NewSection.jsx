@@ -3,15 +3,10 @@ import { Stack, Typography, Box, Button } from "@mui/material";
 import NewsSlider from "./Parts/NewsSlider";
 const NewSection = () => {
   return (
-    <Stack py={5} sx={{ backgroundColor: "red" }}>
+    <Stack py={5}>
       <Stack direction={"row"} justifyContent={"space-evenly"}>
         <Stack width={"50%"} height={"250px"}>
-          <Box
-            display={"flex"}
-            flexDirection={"column"}
-            gap={"10px"}
-            paddingLeft={"5px"}
-          >
+          <Stack gap={"10px"} paddingLeft={"5px"}>
             <Typography variant="h3" fontWeight={"bold"}>
               Get Our Latest Charity News Update
             </Typography>
@@ -23,7 +18,7 @@ const NewSection = () => {
                 backgroundColor: "#ffcd00",
               }}
             ></Box>
-          </Box>
+          </Stack>
         </Stack>
         <Box display={"flex"} justifyContent={"right"} width={"40%"}>
           <Button>

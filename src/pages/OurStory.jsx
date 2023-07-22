@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import Newbox from "../components/Home/Parts/Newbox";
 
 const Ourstory = () => {
   return (
@@ -18,6 +19,7 @@ const Ourstory = () => {
         >
           <Typography variant="h1">Our Story</Typography>
         </Box>
+        <Newbox/>
       </>
     </div>
   );
