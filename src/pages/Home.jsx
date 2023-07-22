@@ -7,23 +7,26 @@ import Testimonial from "../components/Home/Testimonials";
 import IntroSection from "../components/Home/IntroSection";
 import AboutSection from "../components/Home/AboutSection";
 import ContactSection from "../components/Home/ContactSection";
-import CausesSection from "../components/Home/CausesSection";
+import CausesSection from "../components/Home/CausesSection"; 
 import NewSection from "../components/Home/NewSection";
 import ExploreSection from "../components/Home/ExploreSection";
+import Newbox from "../components/Home/Parts/Newbox";
+import Themesofimpact from "../components/Home/Themesofimpact";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
       <IntroSection />
+      <Spondser />
       <AboutSection />
+      <Themesofimpact/>
       <ContactSection />
       <CausesSection />
       <Event />
       <Testimonial />
       <NewSection />
       <ExploreSection />
-      <Spondser />
       <Number />
     </>
   );
