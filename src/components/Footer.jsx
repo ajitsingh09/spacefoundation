@@ -23,7 +23,7 @@ const Footer = () => {
         justifyContent={"center"}
         sx={{
           widht: "100%",
-          height: "660px ",
+          height: "600px",
           color: "white",
           backgroundColor: "#3e3d3d",
         }}
@@ -81,7 +81,7 @@ const Footer = () => {
                     className="mainNavLInks"
                   />
                 </Stack>
-                <Box display={"flex"} flexDirection={"column"} gap={"20px"}>
+                <Box display={"flex"} flexDirection={"row"} gap={"20px"}>
                   <Button>
                     <Typography>Donate Us</Typography>
                   </Button>
@@ -91,9 +91,24 @@ const Footer = () => {
                 </Box>
               </Box>
             </Box>
-            <Box width={"33%"}>
-              <Box width={"350px"} height={"500px"}>
+            <Box width={"33%"} display={"flex"} flexDirection={"column"}>
+              <Box width={"350px"} height={"300px"}>
                 <Map />
+              </Box>
+              <Box
+                height={"80px"}
+                display={"flex"}
+                flexDirection={"row"}
+                alignItems={"center"}
+              >
+                <TextField
+                  id="standard-basic"
+                  label="Email to Subscribe"
+                  variant="standard"
+                />
+                <Box display={"flex"} alignItems={"center"}>
+                  <SendOutlinedIcon />
+                </Box>
               </Box>
             </Box>
             <Box
@@ -171,7 +186,7 @@ const Footer = () => {
             </Box>
           </Stack>
 
-          <Box>
+          <Box paddingTop={"40px"}>
             <Typography
               sx={{
                 content: "''",
@@ -189,51 +204,27 @@ const Footer = () => {
                 alignItems={"center"}
               >
                 <Link to="/" className="mainNavLInks">
-                  SPONSDER A CHILD
+                  Legal Disclaimer
                 </Link>
                 <Link to="/" className="mainNavLInks">
-                  NEWSROOM
+                  Sitemap{" "}
                 </Link>
+
                 <Link to="/" className="mainNavLInks">
-                  ABOUT US
-                </Link>
-                <Link to="/" className="mainNavLInks">
-                  CONTACT US
-                </Link>
-                <Link to="/" className="mainNavLInks">
-                  FAQ
+                  Child protection policy
                 </Link>
               </Box>
-              <Box
-                height={"80px"}
-                display={"flex"}
-                flexDirection={"row"}
-                alignItems={"center"}
-              >
-                <TextField
-                  id="standard-basic"
-                  label="Standard"
-                  variant="standard"
-                />
-                <SendOutlinedIcon />
+              <Box display={"flex"} alignItems={"center"}>
+                <Typography>
+                  2023 SPACE Foundation | All Rights Reserved
+                </Typography>
               </Box>
             </Box>
           </Box>
         </Box>
       </Box>
 
-      <Box
-        display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        sx={{
-          backgroundColor: "white",
-          height: "70px",
-          width: "100%",
-        }}
-      >
-        <Typography>Copyrights © 2023 SPACE All rights reserved.</Typography>
-      </Box>
+     
     </Box>
   );
 };
