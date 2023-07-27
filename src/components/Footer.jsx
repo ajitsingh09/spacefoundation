@@ -95,7 +95,11 @@ const Footer = () => {
               <Box width={"350px"} height={"300px"}>
                 <Map />
               </Box>
-              <Box
+              <form  style={{display:"flex", flexDirection:"column"}}>
+              <label style={{fontWeight:"bold"}}>Email to subscriber</label>
+                <input type="Email to subscriber" style={{width:"15rem", height:"1.5rem"}}/>
+              </form>
+              {/* <Box
                 height={"80px"}
                 display={"flex"}
                 flexDirection={"row"}
@@ -109,7 +113,7 @@ const Footer = () => {
                 <Box display={"flex"} alignItems={"center"}>
                   <SendOutlinedIcon />
                 </Box>
-              </Box>
+              </Box> */}
             </Box>
             <Box
               width={"350px"}
