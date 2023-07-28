@@ -5,7 +5,7 @@ import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
 
 const CausesSection = () => {
   return (
-    <Box width="100%" sx={{backgroundColor:"white"}}>
+    <Box width="100%" sx={{ backgroundColor: "white" }}>
       <Box>
         <Stack textAlign="center" justifyContent="end" height="150px">
           <Typography variant="h4" fontWeight="bold">

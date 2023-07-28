@@ -57,7 +57,12 @@ const Event = () => {
   }, [currentIndex]);
 
   return (
-    <Stack justifyContent={"center"} alignItems={"center"} py={8} sx={{backgroundColor:"white"}}>
+    <Stack
+      justifyContent={"center"}
+      alignItems={"center"}
+      py={8}
+      sx={{ backgroundColor: "white" }}
+    >
       <Typography variant="h3" pb={2}>
         UPCOMING EVENTS
       </Typography>
@@ -113,7 +118,7 @@ const Event = () => {
           })}
         </Stack>
       </Stack>
-    </Stack> 
+    </Stack>
   );
 };
 

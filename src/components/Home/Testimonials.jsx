@@ -17,7 +17,7 @@ const Testimonial = () => {
         width={"100%"}
         height={"100vh"}
         gap={"40px"}
-        sx={{  paddingTop: "10%", backgroundColor:"black", opacity:"0.5" }}
+        sx={{ paddingTop: "10%", backgroundColor: "black", opacity: "0.5" }}
       >
         {testi.map((val, index) => (
           <Box display={"flex"}>

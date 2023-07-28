@@ -19,7 +19,7 @@ import Number from "./Home/Number";
 const Footer = () => {
   return (
     <Box>
-      <Number/>
+      <Number />
       <Box
         display="flex"
         justifyContent={"center"}
@@ -97,9 +97,14 @@ const Footer = () => {
               <Box width={"350px"} height={"300px"}>
                 <Map />
               </Box>
-              <form  style={{display:"flex", flexDirection:"column"}}>
-              <label style={{fontWeight:"bold"}}>Email to subscriber</label>
-                <input type="Email to subscriber" style={{width:"15rem", height:"1.5rem"}}/>
+              <form style={{ display: "flex", flexDirection: "column" }}>
+                <label style={{ fontWeight: "bold" }}>
+                  Email to subscriber
+                </label>
+                <input
+                  type="Email to subscriber"
+                  style={{ width: "15rem", height: "1.5rem" }}
+                />
               </form>
               {/* <Box
                 height={"80px"}

@@ -5,7 +5,7 @@ import PlayCircleTwoToneIcon from "@mui/icons-material/PlayCircleTwoTone";
 
 const AboutSection = () => {
   return (
-    <Stack sx={{backgroundColor:"white"}}>
+    <Stack sx={{ backgroundColor: "white" }}>
       <Stack
         direction="row"
         sx={{

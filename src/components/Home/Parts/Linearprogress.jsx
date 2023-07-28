@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { CircularProgress, Typography, Box } from "@mui/material";
 import { donation } from "../../../dummydata";
 
-const Progressbar2 = ({ raised, goals,clr }) => {
+const Progressbar2 = ({ raised, goals, clr }) => {
   // const raisedAmount = 46303;
   // const goalAmount = 95000;
   const targetPercentage = Math.floor((raised / goals) * 100);
@@ -18,7 +18,6 @@ const Progressbar2 = ({ raised, goals,clr }) => {
   }, [targetPercentage]);
 
   return (
-     
     <Box style={{ position: "relative", display: "inline-block" }}>
       <CircularProgress
         variant="determinate"
@@ -28,22 +27,20 @@ const Progressbar2 = ({ raised, goals,clr }) => {
         sx={{
           color: clr,
         }}
-        />
+      />
       <Typography
         variant="body1"
         component="div"
         style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
         }}
-        >
+      >
         {`${animationPercentage}%`}
       </Typography>
     </Box>
-        
-
   );
 };
 
