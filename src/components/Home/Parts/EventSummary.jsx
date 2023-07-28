@@ -5,7 +5,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 const EventSummary = ({ data, today = false }) => {
   return (
     <Stack
-      flexDirection={"row"}
+      flexDirection={"row"} 
       sx={{
         width: "85%",
       }}
