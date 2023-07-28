@@ -113,7 +113,7 @@ const Event = () => {
           })}
         </Stack>
       </Stack>
-    </Stack>
+    </Stack> 
   );
 };
 

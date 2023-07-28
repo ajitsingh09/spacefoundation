@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSection from "../components/Home/HeroSection";
 import Event from "../components/Home/Event";
-import Number from "../components/Home/Number";
 import Spondser from "../components/Home/Spondser";
 import Testimonial from "../components/Home/Testimonials";
 import IntroSection from "../components/Home/IntroSection";
@@ -36,7 +35,6 @@ const Home = () => {
         <Testimonial />
         <NewSection />
         <ExploreSection />
-        <Number />
       </Box>
     </>
   );

@@ -14,10 +14,12 @@ import ForwardToInboxOutlinedIcon from "@mui/icons-material/ForwardToInboxOutlin
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import Map from "./HexaMap";
+import Number from "./Home/Number";
 
 const Footer = () => {
   return (
     <Box>
+      <Number/>
       <Box
         display="flex"
         justifyContent={"center"}
