@@ -1,10 +1,8 @@
-import React from 'react'
-import Newbox from './Parts/Newbox'
+import React from "react";
+import Newbox from "./Parts/Newbox";
 
 const Themesofimpact = () => {
-  return (
-    <Newbox/>
-  )
-}
+  return <Newbox />;
+};
 
-export default Themesofimpact
+export default Themesofimpact;

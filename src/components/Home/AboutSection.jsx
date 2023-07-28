@@ -57,10 +57,7 @@ const AboutSection = () => {
           </Typography>
         </Box>
       </Stack>
-      <Stack
-        direction="row"
-        sx={{ width: "100%", height: "fit-content"}}
-      >
+      <Stack direction="row" sx={{ width: "100%", height: "fit-content" }}>
         <Box
           sx={{
             width: "86%",

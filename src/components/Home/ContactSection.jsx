@@ -47,13 +47,6 @@ const ContactSection = () => {
           alignItems: "center",
         }}
       >
-        <Box sx={{ display: { xs: "none", lg: "block" } }}>
-          <img
-            src={ylo}
-            alt=""
-            style={{ transform: "translate(150px,120px)" }}
-          />
-        </Box>
         <Box textAlign="center" sx={{ width: "100%" }}>
           <Stack width="100%" justifyContent="center" alignItems="center">
             <Box sx={{ textAlign: "center", width: "900px" }}>
@@ -85,11 +78,6 @@ const ContactSection = () => {
             </Box>
           </Stack>
         </Box>
-        <img
-          src={ylo2}
-          alt=""
-          style={{ transform: "translate(-150px,120px)" }}
-        />
       </Box>
       <Stack
         direction="row"

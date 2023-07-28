@@ -7,7 +7,7 @@ import Testimonial from "../components/Home/Testimonials";
 import IntroSection from "../components/Home/IntroSection";
 import AboutSection from "../components/Home/AboutSection";
 import ContactSection from "../components/Home/ContactSection";
-import CausesSection from "../components/Home/CausesSection"; 
+import CausesSection from "../components/Home/CausesSection";
 import NewSection from "../components/Home/NewSection";
 import ExploreSection from "../components/Home/ExploreSection";
 import Newbox from "../components/Home/Parts/Newbox";
@@ -20,7 +20,7 @@ const Home = () => {
       <IntroSection />
       <Spondser />
       <AboutSection />
-      <Themesofimpact/>
+      <Themesofimpact />
       <ContactSection />
       <CausesSection />
       <Event />

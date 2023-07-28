@@ -223,8 +223,6 @@ const Footer = () => {
           </Box>
         </Box>
       </Box>
-
-     
     </Box>
   );
 };

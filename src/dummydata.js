@@ -203,62 +203,69 @@ export const images = [
   },
 ];
 
-export const work =[
+export const work = [
   {
-    id:"0",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Healthcare",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"red"
+    id: "0",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Healthcare",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "red",
   },
   {
-    id:"1",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Nutrition",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"yellow"
-
+    id: "1",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Nutrition",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "yellow",
   },
   {
-    id:"2",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Education",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"green"
-
+    id: "2",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Education",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "green",
   },
   {
-    id:"3",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"blue"
-
+    id: "3",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "blue",
   },
   {
-    id:"4",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"grey"
-  }, {
-    id:"5",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"orange"
-  }, {
-    id:"6",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"white"
-  }, {
-    id:"7",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"purple"
-
+    id: "4",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "grey",
   },
-]
+  {
+    id: "5",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "orange",
+  },
+  {
+    id: "6",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "white",
+  },
+  {
+    id: "7",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "purple",
+  },
+];

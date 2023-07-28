@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Donatenow = () => {
-  return (
-    <div>Donatenow</div>
-  )
-}
+  return <div>Donatenow</div>;
+};
 
-export default Donatenow
+export default Donatenow;

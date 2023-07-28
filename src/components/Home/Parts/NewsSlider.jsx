@@ -20,7 +20,6 @@ const NewsSlider = () => {
             height: "450px",
             zIndex: "0",
             border: "1px solid #dbdbd9",
-            borderRadius: "10px",
             "&:hover": {
               border: "1px solid #ffcd00",
             },
@@ -50,7 +49,6 @@ const NewsSlider = () => {
                 backgroundSize: hoveredIndex === index ? "contain" : "cover",
                 cursor: "pointer",
                 backgroundPosition: "center",
-                borderRadius: "10px 10px 0 0",
                 zIndex: 2,
               }}
             />
@@ -92,7 +90,6 @@ const NewsSlider = () => {
                 style={{
                   position: "relative",
                   zIndex: 0,
-                  borderRadius: "10px 10px 0 0",
                 }}
               />
             </Box>

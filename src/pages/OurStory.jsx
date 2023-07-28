@@ -19,7 +19,7 @@ const Ourstory = () => {
         >
           <Typography variant="h1">Our Story</Typography>
         </Box>
-        <Newbox/>
+        <Newbox />
       </>
     </div>
   );
