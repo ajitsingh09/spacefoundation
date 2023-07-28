@@ -1,13 +1,8 @@
-import React from 'react'
-import Newbox from './Parts/Newbox'
-import { Box } from '@mui/material'
+import React from "react";
+import Newbox from "./Parts/Newbox";
 
 const Themesofimpact = () => {
-  return (
-    <Box sx={{backgroundColor:"white"}}>
-    <Newbox/>
-    </Box>
-  )
-}
+  return <Newbox />;
+};
 
-export default Themesofimpact
+export default Themesofimpact;

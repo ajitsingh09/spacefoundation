@@ -17,10 +17,8 @@ const OurWork = () => {
         }}
       >
         <Typography variant="h1">Our Work</Typography>
-        
       </Box>
-      <Progressbar2  />
-
+      <Progressbar2 />
     </>
   );
 };

@@ -27,8 +27,6 @@ const Navbar = () => {
           sx={{
             height: "27vh",
             width: "95%",
-            // outline: "1px solid red",
-            // paddingX: "2rem",
           }}
         >
           <Box>

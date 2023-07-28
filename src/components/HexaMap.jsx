@@ -4,7 +4,6 @@ const Map = () => {
   const mapStyle = {
     height: "280px",
     width: "100%",
-    
   };
 
   return (

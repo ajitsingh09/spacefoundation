@@ -12,7 +12,7 @@ const Eventhero = () => {
   };
   return (
     <>
-      <Stack padding={"15% 0 5% 5%"} direction={"row"} >
+      <Stack padding={"15% 0 5% 5%"} direction={"row"}>
         <Stack gap={"80px"} width={"60%"}>
           {Eventcard.map((val, index) => (
             <Stack direction={"row"}>

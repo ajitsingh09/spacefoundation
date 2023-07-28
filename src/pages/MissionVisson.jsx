@@ -19,7 +19,7 @@ const MissionVisson = () => {
         >
           <Typography variant="h1">mission and vission</Typography>
         </Box>
-        <Eventshero/>
+        <Eventshero />
       </>
     </div>
   );

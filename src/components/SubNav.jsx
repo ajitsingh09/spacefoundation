@@ -7,7 +7,7 @@ import { color } from "@mui/system";
 const SubNav = () => {
   const navigate = useNavigate();
   const [popoverState, setPopoverState] = useState({});
-
+  const [subLinks, setSubLinks] = useState(false);
   const handleMouseEnter = (linkId) => {
     setPopoverState((prevState) => ({
       ...prevState,
@@ -30,7 +30,7 @@ const SubNav = () => {
       alignItems="center"
       alignSelf={"center"}
       spacing={6}
-      m={"auto"}
+      // m={"auto"}
       sx={{
         width: "90%",
         height: "12vh",
@@ -41,9 +41,9 @@ const SubNav = () => {
         direction="row"
         justifyContent="space-evenly"
         alignContent="center"
-        gap={3}
-        pl={3}
-        sx={{ color: "white", height: "100%", paddingRight: 10 }}
+        gap={2}
+        pl={1}
+        sx={{ color: "white", height: "100%", paddingRight: 4 }}
       >
         <div
           style={{
@@ -70,21 +70,35 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={16}
+                  fontSize={17}
                   className="navlink"
+                  sx={{
+                    transition: "all 0.4s ease-in",
+                    color: isPopoverOpen(1) ? "white" : "black",
+                  }}
                 >
                   OUR WORK
                 </Typography>
                 <KeyboardArrowDownIcon
                   className="navlink-link-downarrow"
-                  sx={{ fontSize: 15 }}
+                  sx={{
+                    fontSize: 17,
+                    transition: "all 0.3s ease-in",
+                    color: isPopoverOpen(1) ? "white" : "black",
+                    transform: isPopoverOpen(1)
+                      ? "rotate(180deg)"
+                      : "rotate(0)",
+                  }}
                 />
               </Box>
             </Link>
 
             <Stack
+              flexDirection={"row"}
+              justifyContent={"center"}
+              alignItems={"center"}
               sx={{
-                height: isPopoverOpen(1) ? 160 : 0,
+                height: isPopoverOpen(1) ? 260 : 0,
                 opacity: isPopoverOpen(1) ? 1 : 0,
                 transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
@@ -95,6 +109,16 @@ const SubNav = () => {
                 zIndex: 1,
               }}
             >
+              <Box
+                sx={{
+                  minHeight: 260,
+                  width: 250,
+                  backgroundImage: `url("https://images.unsplash.com/photo-1689613188308-ef2815f15810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></Box>
               <Stack
                 justifyContent={"center"}
                 gap={1}
@@ -116,6 +140,7 @@ const SubNav = () => {
             </Stack>
           </Box>
         </div>
+        {/* //!our Story */}
         <div
           style={{
             display: "flex",
@@ -139,18 +164,32 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={16}
+                  fontSize={17}
+                  sx={{
+                    transition: "all 0.4s ease-in",
+                    color: isPopoverOpen(2) ? "white" : "black",
+                  }}
                 >
                   OUR STORY
                 </Typography>
                 <KeyboardArrowDownIcon
                   className="navlink-link-downarrow"
-                  sx={{ fontSize: 15 }}
+                  sx={{
+                    fontSize: 17,
+                    transition: "all 0.3s ease-in",
+                    color: isPopoverOpen(2) ? "white" : "black",
+                    transform: isPopoverOpen(2)
+                      ? "rotate(180deg)"
+                      : "rotate(0)",
+                  }}
                 />
               </Box>
             </Link>
 
             <Stack
+              flexDirection={"row"}
+              justifyContent={"center"}
+              alignItems={"center"}
               sx={{
                 height: isPopoverOpen(2) ? 260 : 0,
                 opacity: isPopoverOpen(2) ? 1 : 0,
@@ -163,14 +202,34 @@ const SubNav = () => {
                 zIndex: 1,
               }}
             >
+              {" "}
+              <Box
+                sx={{
+                  minHeight: 260,
+                  width: 250,
+                  backgroundImage: `url("https://images.unsplash.com/photo-1689613188308-ef2815f15810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></Box>
               <Stack
                 justifyContent={"center"}
                 gap={1}
                 sx={{ p: 2, width: 140 }}
+                position={"relative"}
               >
-                <Link to="#" className="popperLinks">
-                  <Typography sx={{}}>Events</Typography>
-                </Link>
+                {/* <Link
+                  to="#"
+                  className="popperLinks nestedPoper"
+                  onClick={() => {
+                    setSubLinks(!subLinks);
+                  }}
+                >
+                  <Typography sx={{}} className="popoverLinks ">
+                    Events
+                  </Typography>
+                </Link> */}
                 <Link to="/our-work/world-space-week" className="popperLinks">
                   <Typography sx={{}}>World Space Week</Typography>
                 </Link>
@@ -182,9 +241,9 @@ const SubNav = () => {
                     All India Aestroid search campaign
                   </Typography>
                 </Link>
-                <Link to="#" className="popperLinks">
+                {/* <Link to="#" className="popperLinks">
                   <Typography sx={{}}>Projects</Typography>
-                </Link>
+                </Link> */}
                 <Link to="/our-work/sgvpk" className="popperLinks">
                   <Typography sx={{}}>
                     SPACE Gram Vigran Prachar Kendra : SGVPK
@@ -193,6 +252,11 @@ const SubNav = () => {
                 <Link to="#" className="popperLinks">
                   <Typography sx={{}}>SPACE CALENDER</Typography>
                 </Link>
+              </Stack>
+              <Stack position={"absolute"} className="popover-link-popover">
+                <Typography sx={{ color: "red", display: "none" }}>
+                  hello
+                </Typography>
               </Stack>
             </Stack>
           </Box>
@@ -217,20 +281,34 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={16}
+                  fontSize={17}
+                  sx={{
+                    transition: "all 0.4s ease-in",
+                    color: isPopoverOpen(3) ? "white" : "black",
+                  }}
                 >
                   OUR IMPACT
                 </Typography>
                 <KeyboardArrowDownIcon
                   className="navlink-link-downarrow"
-                  sx={{ fontSize: 15 }}
+                  sx={{
+                    fontSize: 17,
+                    transition: "all 0.3s ease-in",
+                    color: isPopoverOpen(3) ? "white" : "black",
+                    transform: isPopoverOpen(3)
+                      ? "rotate(180deg)"
+                      : "rotate(0)",
+                  }}
                 />
               </Box>
             </Link>
 
             <Stack
+              flexDirection={"row"}
+              justifyContent={"center"}
+              alignItems={"center"}
               sx={{
-                height: isPopoverOpen(3) ? 160 : 0,
+                height: isPopoverOpen(3) ? 260 : 0,
                 opacity: isPopoverOpen(3) ? 1 : 0,
                 transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
@@ -241,6 +319,17 @@ const SubNav = () => {
                 zIndex: 1,
               }}
             >
+              {" "}
+              <Box
+                sx={{
+                  minHeight: 260,
+                  width: 250,
+                  backgroundImage: `url("https://images.unsplash.com/photo-1689613188308-ef2815f15810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></Box>
               <Stack
                 justifyContent={"center"}
                 gap={1}
@@ -278,20 +367,34 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={16}
+                  fontSize={17}
+                  sx={{
+                    transition: "all 0.4s ease-in",
+                    color: isPopoverOpen(4) ? "white" : "black",
+                  }}
                 >
                   TAKE ACTIONS
                 </Typography>
                 <KeyboardArrowDownIcon
                   className="navlink-link-downarrow"
-                  sx={{ fontSize: 15 }}
+                  sx={{
+                    fontSize: 17,
+                    transition: "all 0.3s ease-in",
+                    color: isPopoverOpen(4) ? "white" : "black",
+                    transform: isPopoverOpen(4)
+                      ? "rotate(180deg)"
+                      : "rotate(0)",
+                  }}
                 />
               </Box>
             </Link>
 
             <Stack
+              flexDirection={"row"}
+              justifyContent={"center"}
+              alignItems={"center"}
               sx={{
-                height: isPopoverOpen(4) ? 160 : 0,
+                height: isPopoverOpen(4) ? 260 : 0,
                 opacity: isPopoverOpen(4) ? 1 : 0,
                 transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
@@ -302,6 +405,16 @@ const SubNav = () => {
                 zIndex: 1,
               }}
             >
+              <Box
+                sx={{
+                  minHeight: 260,
+                  width: 250,
+                  backgroundImage: `url("https://images.unsplash.com/photo-1689613188308-ef2815f15810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></Box>
               <Stack
                 justifyContent={"center"}
                 gap={1}
@@ -337,20 +450,34 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={16}
+                  fontSize={17}
+                  sx={{
+                    transition: "all 0.4s ease-in",
+                    color: isPopoverOpen(5) ? "white" : "black",
+                  }}
                 >
                   MEDIA
                 </Typography>
                 <KeyboardArrowDownIcon
                   className="navlink-link-downarrow"
-                  sx={{ fontSize: 15 }}
+                  sx={{
+                    fontSize: 17,
+                    transition: "all 0.3s ease-in",
+                    color: isPopoverOpen(5) ? "white" : "black",
+                    transform: isPopoverOpen(5)
+                      ? "rotate(180deg)"
+                      : "rotate(0)",
+                  }}
                 />
               </Box>
             </Link>
 
             <Stack
+              flexDirection={"row"}
+              justifyContent={"center"}
+              alignItems={"center"}
               sx={{
-                height: isPopoverOpen(5) ? 160 : 0,
+                height: isPopoverOpen(5) ? 260 : 0,
                 opacity: isPopoverOpen(5) ? 1 : 0,
                 transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
@@ -361,6 +488,16 @@ const SubNav = () => {
                 zIndex: 1,
               }}
             >
+              <Box
+                sx={{
+                  minHeight: 260,
+                  width: 250,
+                  backgroundImage: `url("https://images.unsplash.com/photo-1689613188308-ef2815f15810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></Box>
               <Stack
                 justifyContent={"center"}
                 gap={1}
@@ -393,20 +530,34 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={16}
+                  fontSize={17}
+                  sx={{
+                    transition: "all 0.4s ease-in",
+                    color: isPopoverOpen(6) ? "white" : "black",
+                  }}
                 >
                   CONTACT US
                 </Typography>
                 <KeyboardArrowDownIcon
                   className="navlink-link-downarrow"
-                  sx={{ fontSize: 15 }}
+                  sx={{
+                    fontSize: 17,
+                    transition: "all 0.3s ease-in",
+                    color: isPopoverOpen(6) ? "white" : "black",
+                    transform: isPopoverOpen(6)
+                      ? "rotate(180deg)"
+                      : "rotate(0)",
+                  }}
                 />
               </Box>
             </Link>
 
             <Stack
+              flexDirection={"row"}
+              justifyContent={"center"}
+              alignItems={"center"}
               sx={{
-                height: isPopoverOpen(6) ? 160 : 0,
+                height: isPopoverOpen(6) ? 260 : 0,
                 opacity: isPopoverOpen(6) ? 1 : 0,
                 transition: "height 0.2s ease-in, opacity 0.2s ease-in-out",
                 position: "absolute",
@@ -417,6 +568,16 @@ const SubNav = () => {
                 zIndex: 1,
               }}
             >
+              <Box
+                sx={{
+                  minHeight: 260,
+                  width: 250,
+                  backgroundImage: `url("https://images.unsplash.com/photo-1689613188308-ef2815f15810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></Box>
               <Stack
                 justifyContent={"center"}
                 gap={1}
@@ -457,7 +618,7 @@ const SubNav = () => {
           },
         }}
       >
-        <Typography fontFamily={"UbuntuMedium"} sx={{ fontSize: 18 }}>
+        <Typography fontFamily={"UbuntuMedium"} sx={{ fontSize: 17 }}>
           Donate Now
         </Typography>
       </Box>

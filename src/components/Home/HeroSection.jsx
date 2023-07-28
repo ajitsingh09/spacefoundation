@@ -10,16 +10,7 @@ import CircleIcon from "@mui/icons-material/Circle";
 
 const HeroSection = () => {
   const [currentSection, setCurrentSection] = useState(0);
-  useEffect(() => {
-    setTimeout(() => {
-      if (currentSection === 0) {
-        setCurrentSection(1);
-      } else {
-        setCurrentSection(0);
-      }
-    }, 10000);
-  }, [currentSection]);
-  const imgdata = [bg2, bg3];
+  const imgdata = [bg2, bg3, bg2, bg3];
 
   const heroData = [
     {
@@ -39,12 +30,46 @@ const HeroSection = () => {
       button1: "Start Fundraising",
       button2: "Our Causes",
     },
+    {
+      title: "Be a Volunteer",
+      subtitle: "Be a part of the change",
+      description1:
+        "Make someones future brighter, There are a lot of ways to make good things happen",
+      button1: "Help Now",
+      button2: "Our Causes",
+    },
+    {
+      title: "Give Hope",
+      subtitle: "Join the movement",
+      description1:
+        "Make good things happen, There are a lot of ways to make good things happen",
+      button1: "Start Fundraising",
+      button2: "Our Causes",
+    },
   ];
   const handleClick = (n) => {
     console.log("click");
     setCurrentSection(n);
   };
   let data = heroData[currentSection];
+  useEffect(() => {
+    let debouncer;
+    let debounceHandler = () => {
+      if (currentSection === imgdata.length - 1) {
+        setCurrentSection(0);
+      } else {
+        setCurrentSection(currentSection + 1);
+      }
+    };
+    const debounce = () => {
+      clearTimeout(debouncer);
+      debouncer = setTimeout(debounceHandler, 10000);
+    };
+    debounce();
+    return () => {
+      clearTimeout(debouncer);
+    };
+  }, [currentSection]);
   return (
     <Box
       sx={{
@@ -112,8 +137,8 @@ const HeroSection = () => {
           >
             <DarkButton
               sx={{
-                width: 250,
-                height: 75,
+                width: 210,
+                height: 60,
                 outlineColor: "#ffcd00",
                 fontSize: 20,
               }}
@@ -122,8 +147,8 @@ const HeroSection = () => {
             </DarkButton>
             <Button
               sx={{
-                width: 250,
-                height: 75,
+                width: 210,
+                height: 60,
                 outlineColor: "#ffcd00",
                 fontSize: 20,
               }}
@@ -132,21 +157,62 @@ const HeroSection = () => {
             </Button>
           </Stack>
         </Stack>
-        <Stack direction="row" spacing={2} sx={{ width: "10vh", pb: 5 }}>
+        <Stack
+          direction="row"
+          justifyContent={"center"}
+          alignItems={"center"}
+          spacing={2}
+          sx={{ width: "100%", pb: 5 }}
+        >
           <IconButton onClick={() => handleClick(0)}>
             <CircleIcon
-              sx={{ cursor: "pointer", color: "white", fontSize: 20 }}
+              sx={{
+                cursor: "pointer",
+                fontSize: 20,
+                outline: "0px solid white",
+                borderRadius: "50%",
+                color: currentSection === 0 ? "#ffcd00" : "#fff",
+                outlineWidth: currentSection === 0 ? "2px" : "0px",
+                opacity: currentSection === 0 ? 1 : 0.5,
+              }}
             />
           </IconButton>
           <IconButton onClick={() => handleClick(1)}>
             <CircleIcon
               sx={{
                 cursor: "pointer",
-                color: "#ffcc00",
                 fontSize: 20,
-                outline: "4px solid white",
+                outline: "0px solid white",
                 borderRadius: "50%",
-                outlineOffset: 2,
+                color: currentSection === 1 ? "#ffcd00" : "#fff",
+                outlineWidth: currentSection === 1 ? "2px" : "0px",
+                opacity: currentSection === 1 ? 1 : 0.5,
+              }}
+            />
+          </IconButton>
+          <IconButton onClick={() => handleClick(2)}>
+            <CircleIcon
+              sx={{
+                cursor: "pointer",
+                fontSize: 20,
+                outline: "0px solid white",
+                borderRadius: "50%",
+                color: currentSection === 2 ? "#ffcd00" : "#fff",
+                outlineWidth: currentSection === 2 ? "2px" : "0px",
+                opacity: currentSection === 2 ? 1 : 0.5,
+              }}
+            />
+          </IconButton>
+          <IconButton onClick={() => handleClick(3)}>
+            <CircleIcon
+              sx={{
+                cursor: "pointer",
+                fontSize: 20,
+                outline: "0px solid white",
+                borderRadius: "50%",
+                color: currentSection === 3 ? "#ffcd00" : "#fff",
+                outlineWidth: currentSection === 3 ? "2px" : "0px",
+                opacity: currentSection === 3 ? 1 : 0.5,
               }}
             />
           </IconButton>

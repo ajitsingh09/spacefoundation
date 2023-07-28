@@ -1,6 +1,5 @@
 import React from "react";
-import { Box, Typography,Stack } from "@mui/material";
-import Donatenow from "../components/Home/Parts/Donatenow";
+import { Box, Typography, Stack } from "@mui/material";
 
 const Ourstory = () => {
   return (
@@ -8,22 +7,17 @@ const Ourstory = () => {
       <>
         <Box
           display="flex"
-          
           justifyContent={"center"}
           alignItems={"center"}
           sx={{
-            width: "100%",  
+            width: "100%",
             height: "100vh",
             color: "white",
             backgroundColor: "black",
           }}
         >
           <h2>Home/{location.pathname.split("/")[1]}</h2>
-
         </Box>
-        <Stack alignItems={"center"} height={"1500px"} paddingTop={"10%"}>
-        <Donatenow/>
-        </Stack>
       </>
     </div>
   );

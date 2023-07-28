@@ -11,7 +11,7 @@ const Spondser = () => {
       gap={"30px"}
       justifyContent={"center"}
       paddingTop={"10%"}
-      sx={{backgroundColor:"white"}}
+      sx={{ backgroundColor: "white" }}
     >
       {sponser.map((val) => (
         <Box

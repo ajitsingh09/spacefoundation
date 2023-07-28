@@ -5,7 +5,14 @@ import Progressbar2 from "./Linearprogress";
 // import Progressbar from "./Progressbar";
 const Donatenow = () => {
   return (
-    <Stack width={"90%"} flexWrap={"wrap"}  direction={"row"} gap={"12px"} rowGap={"30px"} alignItems={"center"}>
+    <Stack
+      width={"90%"}
+      flexWrap={"wrap"}
+      direction={"row"}
+      gap={"12px"}
+      rowGap={"30px"}
+      alignItems={"center"}
+    >
       {donation.map((val) => (
         <Stack
           direction={"column"}
@@ -52,17 +59,25 @@ const Donatenow = () => {
               {val.title}
             </Typography>
             <Typography fontSize={"15px"}>{val.des}</Typography>
-            <Box textAlign="center" display="flex" flexDirection="column" paddingTop={"10px"}>
-              <Progressbar2 raised={val.Raised} goals={val.Goals} clr={val.btncol}/>
-
+            <Box
+              textAlign="center"
+              display="flex"
+              flexDirection="column"
+              paddingTop={"10px"}
+            >
+              <Progressbar2
+                raised={val.Raised}
+                goals={val.Goals}
+                clr={val.btncol}
+              />
             </Box>
-            
+
             <Stack direction={"row"} justifyContent={"space-evenly"}>
               <Typography>Goal: {val.Goals} $</Typography>
               <Typography>Raised: {val.Raised} $</Typography>
             </Stack>
             <Box>
-            <Button
+              <Button
                 variant="contained"
                 sx={{
                   width: "36%",
@@ -73,10 +88,9 @@ const Donatenow = () => {
                   fontWeight: "bold",
                 }}
               >
-               VIEW DETAILS
+                VIEW DETAILS
               </Button>
             </Box>
-
           </Box>
         </Stack>
       ))}

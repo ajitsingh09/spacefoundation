@@ -5,7 +5,7 @@ import PlayCircleTwoToneIcon from "@mui/icons-material/PlayCircleTwoTone";
 
 const AboutSection = () => {
   return (
-    <Stack sx={{backgroundColor:"white"}}>
+    <Stack sx={{ backgroundColor: "white" }}>
       <Stack
         direction="row"
         sx={{
@@ -57,10 +57,7 @@ const AboutSection = () => {
           </Typography>
         </Box>
       </Stack>
-      <Stack
-        direction="row"
-        sx={{ width: "100%", height: "fit-content"}}
-      >
+      <Stack direction="row" sx={{ width: "100%", height: "fit-content" }}>
         <Box
           sx={{
             width: "86%",

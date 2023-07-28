@@ -5,7 +5,11 @@ import SelectTextFields from "./Parts/SelectTextFields";
 
 const ExploreSection = () => {
   return (
-    <Stack direction={"column"} paddingTop={"5%"} sx={{backgroundColor:"white"}}>
+    <Stack
+      direction={"column"}
+      paddingTop={"5%"}
+      sx={{ backgroundColor: "white" }}
+    >
       <Stack width={"70%"} height={"170px"}>
         <Box
           display={"flex"}
