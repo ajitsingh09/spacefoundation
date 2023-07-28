@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import Progressbar2 from "../components/Home/Parts/Linearprogress";
 
 const OurWork = () => {
   return (
@@ -16,7 +17,10 @@ const OurWork = () => {
         }}
       >
         <Typography variant="h1">Our Work</Typography>
+        
       </Box>
+      <Progressbar2  />
+
     </>
   );
 };

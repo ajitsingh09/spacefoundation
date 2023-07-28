@@ -14,10 +14,12 @@ import ForwardToInboxOutlinedIcon from "@mui/icons-material/ForwardToInboxOutlin
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import Map from "./HexaMap";
+import Number from "./Home/Number";
 
 const Footer = () => {
   return (
     <Box>
+      <Number/>
       <Box
         display="flex"
         justifyContent={"center"}
@@ -95,7 +97,11 @@ const Footer = () => {
               <Box width={"350px"} height={"300px"}>
                 <Map />
               </Box>
-              <Box
+              <form  style={{display:"flex", flexDirection:"column"}}>
+              <label style={{fontWeight:"bold"}}>Email to subscriber</label>
+                <input type="Email to subscriber" style={{width:"15rem", height:"1.5rem"}}/>
+              </form>
+              {/* <Box
                 height={"80px"}
                 display={"flex"}
                 flexDirection={"row"}
@@ -109,7 +115,7 @@ const Footer = () => {
                 <Box display={"flex"} alignItems={"center"}>
                   <SendOutlinedIcon />
                 </Box>
-              </Box>
+              </Box> */}
             </Box>
             <Box
               width={"350px"}

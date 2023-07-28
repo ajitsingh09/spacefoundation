@@ -56,7 +56,7 @@ const Number = () => {
         <Box
           display={"flex"}
           flexDirection={"row"}
-          alignItems={"center"}
+          alignItems={"center"} 
           width={"19%"}
           color={"white"}
           gap={"10px"}

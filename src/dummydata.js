@@ -203,62 +203,181 @@ export const images = [
   },
 ];
 
-export const work =[
+export const work = [
   {
-    id:"0",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Healthcare",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"red"
+    id: "0",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Healthcare",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "red",
   },
   {
-    id:"1",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Nutrition",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"yellow"
+    id: "1",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Nutrition",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "yellow",
+  },
+  {
+    id: "2",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Education",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "green",
+  },
+  {
+    id: "3",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "blue",
+  },
+  {
+    id: "4",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "grey",
+  },
+  {
+    id: "5",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "orange",
+  },
+  {
+    id: "6",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "white",
+  },
+  {
+    id: "7",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    title: "Livelihood",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
+    color: "purple",
+  },
+];
+export const donation = [
+  {
+    id: "0",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    btncol: "orange",
+    title: "Child Support",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
+    barcol: "orange",
+    Goals: "25000",
+    Raised: "5600",
+    btn2col: "orange",
+  },
+  {
+    id: "1",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    btncol: "purple",
+    title: "Child Support",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
+    barcol: "purple",
+    Goals: "35000",
+    Raised: "15600",
+    btn2col: "purple",
+  },
+  {
+    id: "2",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    btncol: "yellow",
+    title: "Child Support",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
+    barcol: "yellow",
+    Goals: "155000",
+    Raised: "85600",
+    btn2col: "yellow",
+  },
+  {
+    id: "3",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    btncol: "grey",
+    title: "Child Support",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
+    barcol: "grey",
+    Goals: "55000",
+    Raised: "25600",
+    btn2col: "grey",
+  },
+  {
+    id: "4",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    btncol: "blue",
+    title: "Child Support",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
+    barcol: "blue",
+    Goals: "525000",
+    Raised: "225600",
+    btn2col: "blue",
+  },
+  {
+    id: "5",
+    img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    btncol: "green",
+    title: "Child Support",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
+    barcol: "green",
+    Goals: "51000",
+    Raised: "42600",
+    btn2col: "green",
+  },
+];
+export const Eventcard = [
+  {
+    id: 0,
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png:"https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    monthyear: "june 2023",
+      Date: 22,
+      StartEnd: "Start: June 18, 2023 | End: June 19, 2023",
 
+      time: "10:00 AM - 07:00 PM",
+      place: "Russian & Turkish Baths",
+      title: "How do you know if a stock will make you money over time",
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
   },
   {
-    id:"2",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Education",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"green"
+    id: 1,
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png:"https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    monthyear: "june 2023",
+      Date: 22,
+      StartEnd: "Start: June 18, 2023 | End: June 19, 2023",
 
+      time: "10:00 AM - 07:00 PM",
+      place: "Russian & Turkish Baths",
+      title: "How do you know if a stock will make you money over time",
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
   },
   {
-    id:"3",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"blue"
+    id: 2,
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png:"https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    monthyear: "june 2023",
+      Date: 22,
+      StartEnd: "Start: June 18, 2023 | End: June 19, 2023",
 
+      time: "10:00 AM - 07:00 PM",
+      place: "Russian & Turkish Baths",
+      title: "How do you know if a stock will make you money over time",
+      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
   },
-  {
-    id:"4",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"grey"
-  }, {
-    id:"5",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"orange"
-  }, {
-    id:"6",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"white"
-  }, {
-    id:"7",
-    cover: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    title:"Livelihood",
-    img:"https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/help.png",
-    color:"purple"
-
-  },
-]
+];

@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Stack } from "@mui/material";
+import Eventshero from "../components/Home/Parts/Eventshero";
 
 const MissionVisson = () => {
   return (
@@ -18,6 +19,7 @@ const MissionVisson = () => {
         >
           <Typography variant="h1">mission and vission</Typography>
         </Box>
+        <Eventshero/>
       </>
     </div>
   );
