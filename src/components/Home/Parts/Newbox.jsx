@@ -18,6 +18,7 @@ const Newbox = () => {
         {work.map((val) => (
           <Box
             className="parent"
+            key={val.id}
             sx={{
               position: "relative",
               width: "250px",

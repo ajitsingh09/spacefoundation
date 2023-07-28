@@ -308,7 +308,7 @@ export const donation = [
     img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     btncol: "grey",
     title: "Child Support",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
     barcol: "grey",
     Goals: "55000",
     Raised: "25600",

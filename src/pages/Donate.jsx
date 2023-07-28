@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import Donatenow from "../components/Home/Parts/Donatenow";
 
 const Donate = () => {
   return (
@@ -18,6 +19,7 @@ const Donate = () => {
         >
           <Typography variant="h1">Donate Now</Typography>
         </Box>
+        <Donatenow />
       </>
     </div>
   );

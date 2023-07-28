@@ -137,8 +137,8 @@ const HeroSection = () => {
           >
             <DarkButton
               sx={{
-                width: 250,
-                height: 75,
+                width: 210,
+                height: 60,
                 outlineColor: "#ffcd00",
                 fontSize: 20,
               }}
@@ -147,8 +147,8 @@ const HeroSection = () => {
             </DarkButton>
             <Button
               sx={{
-                width: 250,
-                height: 75,
+                width: 210,
+                height: 60,
                 outlineColor: "#ffcd00",
                 fontSize: 20,
               }}
