@@ -1,6 +1,8 @@
 import React from "react";
-import { Stack, Typography, Box, Button } from "@mui/material";
+import { Stack, Typography, Box } from "@mui/material";
 import NewsSlider from "./Parts/NewsSlider";
+import Button from "../utils/Button";
+
 const NewSection = () => {
   return (
     <Stack py={5} sx={{ backgroundColor: "white" }}>
@@ -20,13 +22,12 @@ const NewSection = () => {
             ></Box>
           </Stack>
         </Stack>
+
         <Box display={"flex"} justifyContent={"right"} width={"40%"}>
-          <Button>
-            <Typography color={"black"}>GET MORE</Typography>
-          </Button>
+          <Button>GET MORE</Button>
         </Box>
       </Stack>
-      <Stack direction={"row "} gap={"15px"} justifyContent={"space-evenly"}>
+      <Stack direction={"row "} gap={"35px"} justifyContent={"center"}>
         <NewsSlider />
       </Stack>
     </Stack>

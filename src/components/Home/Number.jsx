@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Stack, Button, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
+import Button from "../utils/Button";
 
 const Number = () => {
   return (
@@ -92,10 +93,10 @@ const Number = () => {
             color: "#ffcd00",
             backgroundColor: "white",
             fontWeight: "bold",
-            "&:hover": { backgroundColor: "#ffcd00", color: "white" },
+            "&:hover": { backgroundColor: "white", color: "#ffcc00" },
           }}
         >
-          DONATION NOW
+          Donate Now
         </Button>
       </Box>
     </Stack>

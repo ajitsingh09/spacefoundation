@@ -11,6 +11,7 @@ import NewSection from "../components/Home/NewSection";
 import ExploreSection from "../components/Home/ExploreSection";
 import Themesofimpact from "../components/Home/Themesofimpact";
 import { Box } from "@mui/material";
+import Sponser from "../components/Home/Parts/Sponser";
 
 const Home = () => {
   return (
@@ -34,6 +35,7 @@ const Home = () => {
         <Event />
         <Testimonial />
         <NewSection />
+        <Sponser />
         <ExploreSection />
       </Box>
     </>

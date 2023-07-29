@@ -23,12 +23,7 @@ const AboutSection = () => {
           }}
         ></Box>
         <Box sx={{ padding: "10px 0 0 40px" }}>
-          <Typography
-            variant="H5"
-            fontWeight="bold"
-            color="#ffcd00"
-            fontSize="18px"
-          >
+          <Typography fontWeight="bold" color="#ffcd00" fontSize="28px">
             ABOUT SPACE
           </Typography>
           <Typography

@@ -27,11 +27,11 @@ const EventSummary = ({ data, today = false }) => {
             backgroundColor: "#ffcd00",
           }}
         ></Typography>
-        <Typography variant="body1" pb={1}>
+        <Typography variant="body2" pb={1}>
           {data?.monthyear}
         </Typography>
       </Stack>
-      <Stack pl={3}>
+      <Stack pl={3} justifyContent={"center"}>
         {today ? (
           <Stack
             flexDirection={"row"}
