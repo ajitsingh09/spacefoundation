@@ -6,7 +6,7 @@ import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
 const CausesSection = () => {
   return (
     <Box width="100%" sx={{ backgroundColor: "white" }}>
-      <Box>
+      <Box display={"flex"} gap={"5px"} flexDirection={"column"}>
         <Stack textAlign="center" justifyContent="end" height="150px">
           <Typography variant="h4" fontWeight="bold">
             {" "}
@@ -41,18 +41,17 @@ const CausesSection = () => {
             what the NHS funds.
           </Typography>
         </Stack>
-        <br></br>
 
         <Stack
           direction={"row"}
-          gap="10px"
           flexWrap={"wrap"}
           justifyContent="center"
           alignItems="center"
           zIndex="1"
-        >
+        ></Stack>
+        <Box>
           <Hovercard />
-        </Stack>
+        </Box>
       </Box>
     </Box>
   );

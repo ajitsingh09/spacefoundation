@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { CircularProgress, Typography, Box } from "@mui/material";
+import {
+  LinearProgress,
+  Typography,
+  Box,
+  linearProgressClasses,
+} from "@mui/material";
 import { donation } from "../../../dummydata";
-
 const Progressbar2 = ({ raised, goals, clr }) => {
   // const raisedAmount = 46303;
   // const goalAmount = 95000;
@@ -19,13 +23,18 @@ const Progressbar2 = ({ raised, goals, clr }) => {
 
   return (
     <Box style={{ position: "relative", display: "inline-block" }}>
-      <CircularProgress
+      <LinearProgress
         variant="determinate"
         value={animationPercentage}
-        size={100}
+        size={"large"}
         thickness={5}
+        style={{}}
         sx={{
-          color: clr,
+          bgcolor: "grey",
+          [`& .${linearProgressClasses.bar}`]: {
+            backgroundColor: clr,
+          },
+          height: 20,
         }}
       />
       <Typography
