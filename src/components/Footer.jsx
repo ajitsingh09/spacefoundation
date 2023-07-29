@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import { Box, Stack, TextField } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -97,30 +97,25 @@ const Footer = () => {
               <Box width={"350px"} height={"300px"}>
                 <Map />
               </Box>
-              <form style={{ display: "flex", flexDirection: "column" }}>
-                <label style={{ fontWeight: "bold" }}>
-                  Email to subscriber
-                </label>
-                <input
-                  type="Email to subscriber"
-                  style={{ width: "15rem", height: "1.5rem" }}
-                />
-              </form>
-              {/* <Box
-                height={"80px"}
-                display={"flex"}
-                flexDirection={"row"}
-                alignItems={"center"}
-              >
-                <TextField
-                  id="standard-basic"
-                  label="Email to Subscribe"
-                  variant="standard"
-                />
-                <Box display={"flex"} alignItems={"center"}>
-                  <SendOutlinedIcon />
-                </Box>
-              </Box> */}
+              <Box display={"flex"} gap={"15px"} flexDirection={"column"}>
+                <form style={{ display: "flex", flexDirection: "column" }}>
+                  <label style={{ fontWeight: "bold" }}>
+                    Email to subscriber
+                  </label>
+                  <input
+                    type="Email to subscriber"
+                    style={{ width: "15rem", height: "1.5rem" }}
+                  />
+                </form>
+                <Button
+                  sx={{
+                    width: "35%",
+                    fontSize: "15px",
+                  }}
+                >
+                  Subscribe Now
+                </Button>
+              </Box>
             </Box>
             <Box
               width={"350px"}

@@ -381,3 +381,36 @@ export const Eventcard = [
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
   },
 ];
+
+export const logos = [
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/awb-1.png",
+  },
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/nasa-1.png",
+  },
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/oxford-2.png",
+  },
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/iau-logo-2.png",
+  },
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/UIts-Logo-1.png",
+  },
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/Akhok-1.png",
+  },
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/EarthKAM-1.png",
+  },
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/novodya-1.png",
+  },
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/Space-Arcade-Logo-1.png",
+  },
+  {
+    img: "https://space-foundation.org/wp-content/uploads/2022/08/ksc-1.png",
+  },
+];

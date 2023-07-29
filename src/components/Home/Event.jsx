@@ -61,9 +61,10 @@ const Event = () => {
       justifyContent={"center"}
       alignItems={"center"}
       py={8}
+      gap={"20px"}
       sx={{ backgroundColor: "white" }}
     >
-      <Typography variant="h3" pb={2}>
+      <Typography variant="h4" pb={2} fontWeight={"bold"}>
         UPCOMING EVENTS
       </Typography>
       <Stack
@@ -91,6 +92,7 @@ const Event = () => {
         pb={6}
         sx={{ width: "60%" }}
         textAlign={"center"}
+        color={"grey"}
       >
         The Just giving charity provides enhanced services over and above what
         the NHS funds. Our upcoming eventN
@@ -112,7 +114,7 @@ const Event = () => {
           <ImageCard data={hover[currentIndex]} />
           <EventSummary data={hover[currentIndex]} today={true} />
         </Stack>
-        <Stack justifyContent={"center"} alignItems={"center"} gap={2}>
+        <Stack justifyContent={"center"} alignItems={"center"} gap="33px">
           {hover.map((item, index) => {
             return <EventSummary data={item} key={index} />;
           })}

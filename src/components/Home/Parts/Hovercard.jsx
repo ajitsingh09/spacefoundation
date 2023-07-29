@@ -43,7 +43,7 @@ const Hovercard = () => {
               <Box
                 key={val.id}
                 sx={{
-                  height: "500px",
+                  height: "600px",
                   zIndex: "0",
                   width: "25%",
                   userSelect: "none",
@@ -140,8 +140,13 @@ const Hovercard = () => {
                       rowGap="19px"
                     >
                       <Progressbar raised={val.Raised} goals={val.Goals} />
-                      <Typography variant="h7">
-                        ${val.Raised} Raised / ${val.Goals} Goals
+                      <Typography
+                        variant="h7"
+                        fontWeight={"bold"}
+                        color={"grey"}
+                      >
+                        ${val.Raised} Raised / Goal:{" "}
+                        <span style={{ color: "#ffcc00" }}>${val.Goals} </span>
                       </Typography>
                       <Typography
                         fontWeight="bold"

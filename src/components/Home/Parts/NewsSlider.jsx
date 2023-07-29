@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import Button from "@mui/material/Button";
 import { news } from "../../../dummydata";
+import Button from "../../utils/Button";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+
 const NewsSlider = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
 
@@ -16,10 +17,11 @@ const NewsSlider = () => {
         <Box
           key={val.id}
           sx={{
-            width: "350px",
-            height: "450px",
+            width: "370px",
+            height: "550px",
             zIndex: "0",
             border: "1px solid #dbdbd9",
+            borderRadius: "10px",
             "&:hover": {
               border: "1px solid #ffcd00",
             },
@@ -28,8 +30,8 @@ const NewsSlider = () => {
           <Box
             sx={{
               position: "relative",
-              width: "350px",
-              height: "200px",
+              width: "370px",
+              height: "250px",
             }}
             onMouseEnter={() => handleHover(index)}
             onMouseLeave={() => handleHover(-1)}
@@ -39,8 +41,10 @@ const NewsSlider = () => {
                 position: "absolute",
                 top: 0,
                 left: 0,
-                width: "350px",
-                height: "200px",
+                width: "370px",
+                height: "250px",
+                borderTopLeftRadius: "10px ",
+                borderTopRightRadius: "10px",
                 backgroundColor:
                   hoveredIndex === index
                     ? "rgba(255, 205, 0, 0.7)"
@@ -79,52 +83,59 @@ const NewsSlider = () => {
               display={"flex"}
               justifyContent={"center"}
               alignItems={"center"}
-              height={"200px"}
-              width={"350px"}
+              height={"250px"}
+              width={"370px"}
             >
               <img
                 src={val.cover}
                 alt="First Image"
-                width={"350px"}
-                height={"200px"}
+                width={"370px"}
+                height={"250px"}
                 style={{
                   position: "relative",
                   zIndex: 0,
+                  borderRadius: "10px 10px 0  0 ",
                 }}
               />
             </Box>
-            <Stack width="350px" justifyContent="center" alignItems="center">
-              <Box
-                width="230px"
-                textAlign="left"
-                paddingTop="20px"
-                display="flex"
-                flexDirection="column"
-                rowGap="19px"
-              >
-                <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
-                  <Box display={"flex"} flexDirection={"row"} gap={"10px"}>
-                    <CalendarMonthOutlinedIcon />
-                    <Typography variant="h7">{val.date}</Typography>
+            <Stack padding={"35px"}>
+              <Box display="flex" flexDirection="column" rowGap="19px">
+                <Box display={"flex"} flexDirection={"column"} gap={"10px"}>
+                  <Box display={"flex"} flexDirection={"row"} gap={"5px"}>
+                    <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
+                    <Typography
+                      fontSize={"15px"}
+                      fontWeight={"bold"}
+                      color={"grey"}
+                    >
+                      {val.date}
+                    </Typography>
                   </Box>
-                  <Typography fontWeight="bold">{val.Title}</Typography>
-                  <Typography>{val.des}</Typography>
+                  <Typography fontWeight="bold" fontSize={"18px"}>
+                    {val.Title}
+                  </Typography>
+                  <Typography
+                    fontSize={"14.5px"}
+                    color={"grey"}
+                    lineHeight={1.5}
+                    letterSpacing={"0.3px"}
+                    width={"300px"}
+                  >
+                    {val.des}
+                  </Typography>
+                  <Button
+                    sx={{
+                      width: "50%",
+                      color: "black",
+                      backgroundColor: "#ffcd00",
+                      "&:hover": { backgroundColor: "white" },
+                      fontWeight: "bold",
+                    }}
+                  >
+                    READ MORE
+                  </Button>
                 </Box>
               </Box>
-            </Stack>
-            <Stack alignItems="center" paddingTop="20px">
-              <Button
-                variant="contained"
-                sx={{
-                  width: "48%",
-                  color: "black",
-                  backgroundColor: "#ffcd00",
-                  "&:hover": { backgroundColor: "white" },
-                  fontWeight: "bold",
-                }}
-              >
-                READ MORE
-              </Button>
             </Stack>
           </Box>
         </Box>
