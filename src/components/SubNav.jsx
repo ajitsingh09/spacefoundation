@@ -29,7 +29,6 @@ const SubNav = () => {
       justifyContent="space-between"
       alignItems="center"
       alignSelf={"center"}
-      spacing={6}
       // m={"auto"}
       sx={{
         width: "90%",
@@ -42,7 +41,7 @@ const SubNav = () => {
         justifyContent="space-evenly"
         alignContent="center"
         gap={2}
-        pl={1}
+        pl={3}
         sx={{ color: "white", height: "100%", paddingRight: 4 }}
       >
         <div
@@ -70,7 +69,7 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={17}
+                  fontSize={15}
                   className="navlink"
                   sx={{
                     transition: "all 0.4s ease-in",
@@ -164,7 +163,7 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={17}
+                  fontSize={15}
                   sx={{
                     transition: "all 0.4s ease-in",
                     color: isPopoverOpen(2) ? "white" : "black",
@@ -281,7 +280,7 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={17}
+                  fontSize={15}
                   sx={{
                     transition: "all 0.4s ease-in",
                     color: isPopoverOpen(3) ? "white" : "black",
@@ -367,7 +366,7 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={17}
+                  fontSize={15}
                   sx={{
                     transition: "all 0.4s ease-in",
                     color: isPopoverOpen(4) ? "white" : "black",
@@ -450,7 +449,7 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={17}
+                  fontSize={15}
                   sx={{
                     transition: "all 0.4s ease-in",
                     color: isPopoverOpen(5) ? "white" : "black",
@@ -530,7 +529,7 @@ const SubNav = () => {
                   alignSelf="center"
                   display="inline-block"
                   fontFamily={"UbuntuMedium"}
-                  fontSize={17}
+                  fontSize={15}
                   sx={{
                     transition: "all 0.4s ease-in",
                     color: isPopoverOpen(6) ? "white" : "black",

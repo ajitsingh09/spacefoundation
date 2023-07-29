@@ -1,8 +1,6 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
-import { Stack } from "@mui/system";
+import { Stack, Box, Typography, TextField } from "@mui/material";
+import Button from "../../utils/Button";
 
 const currencies = [
   {
@@ -21,18 +19,22 @@ const currencies = [
 
 export default function SelectTextFields() {
   return (
-    <Box
-      component="form"
-      sx={{
-        "& .MuiTextField-root": { m: 1, width: "35ch" },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <div>
+    <>
+      <Typography variant="h4" fontWeight={"bold"} pb={4}>
+        We are experts in Space Foundation services and solutions
+      </Typography>
+      <Box
+        component="form"
+        sx={{
+          "& .MuiTextField-root": { m: 1, width: "40%" },
+        }}
+        noValidate
+        autoComplete="off"
+      >
         <Stack direction={"column"} gap={"20px"}>
-          <Stack direction={"row"}>
+          <Stack direction={{ xs: "column", lg: "row" }}>
             <TextField
+              sx={{ width: 200 }}
               id="outlined-select-currency-native"
               select
               SelectProps={{
@@ -45,14 +47,43 @@ export default function SelectTextFields() {
                 </option>
               ))}
             </TextField>
-            <TextField id="outlined-basic" label="Name" variant="outlined" />
+            <TextField
+              sx={{ width: 200 }}
+              id="outlined-basic"
+              label="Name"
+              variant="outlined"
+            />
           </Stack>
-          <Stack direction={"row"}>
-            <TextField id="outlined-basic" label="Phone" variant="outlined" />
-            <TextField id="outlined-basic" label="Email" variant="outlined" />
+          <Stack direction={{ xs: "column", lg: "row" }}>
+            <TextField
+              sx={{ width: 200 }}
+              id="outlined-basic"
+              label="Phone"
+              variant="outlined"
+            />
+            <TextField
+              sx={{ width: 200 }}
+              id="outlined-basic"
+              label="Email"
+              variant="outlined"
+            />
           </Stack>
         </Stack>
-      </div>
-    </Box>
+        <Stack alignItems="left" paddingTop="20px">
+          <Button
+            variant="contained"
+            sx={{
+              width: "30%",
+              color: "black",
+              backgroundColor: "#ffcd00",
+              "&:hover": { backgroundColor: "white" },
+              fontWeight: "bold",
+            }}
+          >
+            DONATION
+          </Button>
+        </Stack>
+      </Box>
+    </>
   );
 }
