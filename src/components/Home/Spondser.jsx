@@ -13,8 +13,9 @@ const Spondser = () => {
       paddingTop={"10%"}
       sx={{ backgroundColor: "white" }}
     >
-      {sponser.map((val) => (
+      {sponser.map((val, index) => (
         <Box
+        key={index}
           sx={{
             width: "270px",
             height: "200px",

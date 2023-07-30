@@ -5,22 +5,28 @@ import Progressbar2 from "./Linearprogress";
 // import Progressbar from "./Progressbar";
 const Donatenow = () => {
   return (
+    <>
+    <Stack alignItems={"center"}>
+    <Typography fontSize={"18px"}  color={"grey"}>HELP EVERYONE</Typography>
+    <Typography variant="h2">EACH DONATION IS AN ESSENTIAL HELP</Typography>
+    </Stack>
     <Stack
-      width={"90%"}
       flexWrap={"wrap"}
+      gap={5}
+      pt={5}
+      pb={5}
       direction={"row"}
-      gap={"12px"}
-      rowGap={"30px"}
+      justifyContent={"center"}
       alignItems={"center"}
     >
-      {donation.map((val) => (
+      
+      {donation.map((val, index) => (
         <Stack
+        key={index}
           direction={"column"}
           width={"350px"}
-          height={"500px"}
           sx={{
-            boxShadow: "-1px 2px 9px -2px rgb(8, 8, 8)",
-            padding: "10px",
+            boxShadow: "0px -1px 11px -5px rgb(8, 8, 8)",
           }}
         >
           <Box height={"210px"} width="350px" sx={{ position: "relative" }}>
@@ -54,11 +60,11 @@ const Donatenow = () => {
               </Button>
             </Box>
           </Box>
-          <Box display={"flex"} gap={"10px"} flexDirection={"column"}>
+          <Box display={"flex"} gap={"20px"} flexDirection={"column"} p={4} letterSpacing={1}>
             <Typography variant="h4" fontWeight={"bold"}>
               {val.title}
             </Typography>
-            <Typography fontSize={"15px"}>{val.des}</Typography>
+            <Typography fontSize={"15px"} color={"grey"}>{val.des}</Typography>
             <Box
               textAlign="center"
               display="flex"
@@ -80,7 +86,7 @@ const Donatenow = () => {
               <Button
                 variant="contained"
                 sx={{
-                  width: "36%",
+                  width: "50%",
                   color: "white",
                   backgroundColor: val.btncol,
                   borderRadius: "20px",
@@ -95,6 +101,7 @@ const Donatenow = () => {
         </Stack>
       ))}
     </Stack>
+    </>
   );
 };
 

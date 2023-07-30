@@ -6,7 +6,6 @@ const ImageCard = ({ data }) => {
   const handleHover = () => {
     setIsHovered(!isHovered);
   };
-  console.log(data, "data");
   return (
     <Box
       onMouseEnter={handleHover}

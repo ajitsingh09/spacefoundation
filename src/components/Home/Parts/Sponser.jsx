@@ -33,7 +33,7 @@ const Sponser = () => {
       </Box>
       <Stack direction={"row"} gap={"140px"} flexWrap={"wrap"} padding={"20px"}>
         {logos.map((val) => (
-          <Box width={"110px"} height={"70px"}>
+          <Box width={"110px"} height={"70px"} key={val.id}>
             <img src={val.img} alt="" />
           </Box>
         ))}

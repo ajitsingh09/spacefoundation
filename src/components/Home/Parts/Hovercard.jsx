@@ -27,13 +27,13 @@ const Hovercard = () => {
         alignItems={"center"}
         sx={{ width: "100%" }}
       >
-        <motion.Box
+        <motion.div
           ref={carousel}
           className="carousel"
           // whileTap={{ cursor: "grabbing" }}
           style={{ width: "98%", padding: "10px" }}
         >
-          <motion.Box
+          <motion.div
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
             className="inner-carousel"
@@ -178,8 +178,8 @@ const Hovercard = () => {
                 </Box>
               </Box>
             ))}
-          </motion.Box>
-        </motion.Box>
+          </motion.div>
+        </motion.div>
       </Stack>
     </>
   );

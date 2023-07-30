@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { CircularProgress, Typography } from "@mui/material";
+import { CircularProgress, Typography, Box } from "@mui/material";
 
 const Progressbar = ({ raised, goals }) => {
   // const raisedAmount = 46303;
@@ -17,7 +17,8 @@ const Progressbar = ({ raised, goals }) => {
   }, [targetPercentage]);
 
   return (
-    <div style={{ position: "relative", display: "inline-block" }}>
+    <Box sx={{ position: "relative", display: "inline-block", width:"200px", height:"100px" }}>
+      con
       <CircularProgress
         variant="determinate"
         value={animationPercentage}
@@ -39,7 +40,7 @@ const Progressbar = ({ raised, goals }) => {
       >
         {`${animationPercentage}%`}
       </Typography>
-    </div>
+    </Box>
   );
 };
 

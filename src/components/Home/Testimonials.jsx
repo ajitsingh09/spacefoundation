@@ -35,7 +35,7 @@ const Testimonial = () => {
           sx={{ paddingTop: "10%", zIndex: 10 }}
         >
           {testi.map((val, index) => (
-            <Box display={"flex"}>
+            <Box display={"flex"} key={index}>
               <Box display={"flex"} flexDirection={"column"} gap={"40px"}>
                 <Box display={"flex"} flexDirection={"row"} gap={"10px"}>
                   <Box width={"40%"} display={"flex"} justifyContent={"right"}>

@@ -76,7 +76,6 @@ const HeroSection = () => {
         backgroundImage: `url(${imgdata[currentSection]})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        hight: "200vh",
       }}
     >
       <Stack
