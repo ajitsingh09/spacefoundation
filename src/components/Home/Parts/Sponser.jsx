@@ -5,7 +5,7 @@ import { logos } from "../../../dummydata";
 
 const Sponser = () => {
   return (
-    <Stack height={"650px"} sx={{ backgroundColor: "white" }}>
+    <Stack sx={{ backgroundColor: "white" }}>
       <Box display={"flex"} flexDirection={"column"}>
         <Stack textAlign="center" justifyContent="end" height="100px">
           <Typography variant="h4" fontWeight="bold">
@@ -31,12 +31,18 @@ const Sponser = () => {
           <CheckBoxOutlinedIcon sx={{ color: "#ffcd00" }} />
         </Stack>
       </Box>
-      <Stack direction={"row"} gap={"140px"} flexWrap={"wrap"} padding={"20px"}>
+      <Stack direction={"row"} gap={2} flexWrap={"wrap"}>
         {logos.map((val) => (
-          <Box width={"110px"} height={"70px"}>
-            <img src={val.img} alt="" />
+          <Box width={"190px"} height={"140px"} p={1} flexGrow={1}>
+            <img
+              src={val.img}
+              alt=""
+              style={{ width: "100%", height: "100%" }}
+            />
           </Box>
         ))}
+        <Box width={"190px"} flexGrow={1} />
+        <Box width={"190px"} flexGrow={1} />
       </Stack>
     </Stack>
   );
