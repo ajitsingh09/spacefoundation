@@ -100,40 +100,41 @@ const Imageslide = () => {
                   }}
                 />
               </Box>
-              <Box pt={2} pr={2} pb={2} >
+              <Box pt={2} pr={2} pb={2}>
                 <Stack gap={2}>
-                <Typography
-                  fontSize={"18px"}
-                  fontWeight={"bold"}
-                  sx={{
-                     
-                    cursor: "pointer",
-                    "&:hover": {
-                      color: "#ffcc00",
-                    },
-                  }}
-                >
-                  {val.title}
-                </Typography>
-                
-                <Stack gap={1}>
-                  <Stack direction={"row"} gap={2}>
-                    <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
-                    <Typography color={"grey"}>
-                      Start: {val.Start}
-                    </Typography>{" "}
+                  <Typography
+                    fontSize={"18px"}
+                    fontWeight={"bold"}
+                    sx={{
+                      cursor: "pointer",
+                      "&:hover": {
+                        color: "#ffcc00",
+                      },
+                    }}
+                  >
+                    {val.title}
+                  </Typography>
+
+                  <Stack gap={1}>
+                    <Stack direction={"row"} gap={2}>
+                      <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
+                      <Typography color={"grey"}>
+                        Start: {val.Start}
+                      </Typography>{" "}
+                    </Stack>
+                    <Stack direction={"row"} gap={2}>
+                      <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
+                      <Typography color={"grey"}>
+                        End: {val.End}
+                      </Typography>{" "}
+                    </Stack>
+                    <Stack direction={"row"} gap={2}>
+                      <EmailOutlinedIcon sx={{ color: "#ffcc00" }} />
+                      <Typography color={"grey"}>
+                        Address: {val.Address}
+                      </Typography>{" "}
+                    </Stack>
                   </Stack>
-                  <Stack direction={"row"} gap={2}>
-                    <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
-                    <Typography color={"grey"}>End: {val.End}</Typography>{" "}
-                  </Stack>
-                  <Stack direction={"row"} gap={2}>
-                    <EmailOutlinedIcon sx={{ color: "#ffcc00" }} />
-                    <Typography color={"grey"}>
-                      Address: {val.Address}
-                    </Typography>{" "}
-                  </Stack>
-                </Stack>
                 </Stack>
               </Box>
             </Box>

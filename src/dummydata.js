@@ -113,6 +113,33 @@ export const news = [
     Title: "First child dies of Ebola in new outbreak in Uganda",
     des: "We help families raise funds for their adoptions by telling their story to a larger ...",
   },
+  {
+    id: 3,
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    date: "August 12 2019",
+    Title: "First child dies of Ebola in new outbreak in Uganda",
+    des: "We help families raise funds for their adoptions by telling their story to a larger ...",
+  },
+  {
+    id: 4,
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    date: "August 12 2019",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    Title: "First child dies of Ebola in new outbreak in Uganda",
+    des: "We help families raise funds for their adoptions by telling their story to a larger ...",
+  },
+  {
+    id: 5,
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    date: "August 12 2019",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    Title: "First child dies of Ebola in new outbreak in Uganda",
+    des: "We help families raise funds for their adoptions by telling their story to a larger ...",
+  },
 ];
 export const testi = [
   {
@@ -384,105 +411,105 @@ export const Eventcard = [
 
 export const logos = [
   {
-    id:"0",
+    id: "0",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/awb-1.png",
   },
   {
-    id:"1",
+    id: "1",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/nasa-1.png",
   },
   {
-    id:"2",
+    id: "2",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/oxford-2.png",
   },
   {
-    id:"3",
+    id: "3",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/iau-logo-2.png",
   },
   {
-    id:"4",
+    id: "4",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/UIts-Logo-1.png",
   },
   {
-    id:"5",
+    id: "5",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/Akhok-1.png",
   },
   {
-    id:"6",
+    id: "6",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/EarthKAM-1.png",
   },
   {
-    id:"7",
+    id: "7",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/novodya-1.png",
   },
   {
-    id:"8",
+    id: "8",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/Space-Arcade-Logo-1.png",
   },
   {
-    id:"9",
+    id: "9",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/ksc-1.png",
   },
 ];
-export const cards=[
+export const cards = [
   {
-    id:"0",
+    id: "0",
     cover:
       "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
-    title:"How do you know if a stock will make you money over time.",
-    Start:"July 31, 2019",
-    End:"July 31, 2020",
-    Address:"Russian & Turkish Baths"
+    title: "How do you know if a stock will make you money over time.",
+    Start: "July 31, 2019",
+    End: "July 31, 2020",
+    Address: "Russian & Turkish Baths",
   },
   {
-    id:"1",
+    id: "1",
     cover:
       "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
-    title:"How do you know if a stock will make you money over time.",
-    Start:"July 31, 2019",
-    End:"July 31, 2020",
-    Address:"Russian & Turkish Baths"
+    title: "How do you know if a stock will make you money over time.",
+    Start: "July 31, 2019",
+    End: "July 31, 2020",
+    Address: "Russian & Turkish Baths",
   },
   {
-    id:"2",
+    id: "2",
     cover:
       "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
-    title:"How do you know if a stock will make you money over time.",
-    Start:"July 31, 2019",
-    End:"July 31, 2020",
-    Address:"Russian & Turkish Baths"
+    title: "How do you know if a stock will make you money over time.",
+    Start: "July 31, 2019",
+    End: "July 31, 2020",
+    Address: "Russian & Turkish Baths",
   },
   {
-    id:"3",
+    id: "3",
     cover:
       "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
-    title:"How do you know if a stock will make you money over time.",
-    Start:"July 31, 2019",
-    End:"July 31, 2020",
-    Address:"Russian & Turkish Baths"
+    title: "How do you know if a stock will make you money over time.",
+    Start: "July 31, 2019",
+    End: "July 31, 2020",
+    Address: "Russian & Turkish Baths",
   },
   {
-    id:"4",
+    id: "4",
     cover:
       "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
-    title:"How do you know if a stock will make you money over time.",
-    Start:"July 31, 2019",
-    End:"July 31, 2020",
-    Address:"Russian & Turkish Baths"
+    title: "How do you know if a stock will make you money over time.",
+    Start: "July 31, 2019",
+    End: "July 31, 2020",
+    Address: "Russian & Turkish Baths",
   },
   {
-    id:"5",
+    id: "5",
     cover:
       "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
     png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
-    title:"How do you know if a stock will make you money over time.",
-    Start:"July 31, 2019",
-    End:"July 31, 2020",
-    Address:"Russian & Turkish Baths"
+    title: "How do you know if a stock will make you money over time.",
+    Start: "July 31, 2019",
+    End: "July 31, 2020",
+    Address: "Russian & Turkish Baths",
   },
-]
+];

@@ -15,7 +15,7 @@ const Spondser = () => {
     >
       {sponser.map((val, index) => (
         <Box
-        key={index}
+          key={index}
           sx={{
             width: "270px",
             height: "200px",
