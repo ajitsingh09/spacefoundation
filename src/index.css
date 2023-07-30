@@ -43,7 +43,16 @@ body {
 .mainNavLInks:hover {
   color: #ffcd00;
 }
-
+.mainNavLInks1 {
+  text-decoration: none;
+  color: black;
+}
+.mainNavLInks1:hover {
+  color: #ffcd00;
+}
+.mainNavLInks1 .main2 {
+  color: #ffcd00;
+}
 .popperLinks {
   text-decoration: none;
   color: #454545;

@@ -27,7 +27,7 @@ const NewSection = () => {
           <Button>GET MORE</Button>
         </Box>
       </Stack>
-      <Stack direction={"row "} gap={"35px"} justifyContent={"center"}>
+      <Stack direction={"row"} gap={4.5} justifyContent={"center"}>
         <NewsSlider />
       </Stack>
     </Stack>

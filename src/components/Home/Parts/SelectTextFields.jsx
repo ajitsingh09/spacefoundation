@@ -41,8 +41,8 @@ export default function SelectTextFields() {
                 native: true,
               }}
             >
-              {currencies.map((option) => (
-                <option key={option.value} value={option.value}>
+              {currencies.map((option, index) => (
+                <option key={index} value={option.value}>
                   {option.label}
                 </option>
               ))}

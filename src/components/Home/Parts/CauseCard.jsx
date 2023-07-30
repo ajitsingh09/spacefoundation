@@ -27,10 +27,10 @@ const Causecard = () => {
           },
         }}
       >
-        {card.map((val) => {
+        {card.map((val,index) => {
           return (
             <>
-              <Box position={"relative"}>
+              <Box position={"relative"} key={index}>
                 <Box
                   sx={{
                     height: "500px",

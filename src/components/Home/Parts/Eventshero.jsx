@@ -1,9 +1,13 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { Eventcard } from "../../../dummydata";
+import { Link } from "react-router-dom";
+import { Eventcard, cards } from "../../../dummydata";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
-
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Imageslide from "./upcomingEventslider";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import Mapevent from "./Map";
+import Button from "../../utils/Button";
 
 const Eventhero = () => {
   const [isHovered, setIsHovered] = useState(-1);
@@ -12,10 +16,29 @@ const Eventhero = () => {
   };
   return (
     <>
-      <Stack padding={"15% 0 5% 5%"} direction={"row"}>
-        <Stack gap={"80px"} width={"60%"}>
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        position={"relative"}
+        alignItems={"center"}
+      >
+        <Box width={"80%"} height={"500px"}>
+          <Mapevent />
+        </Box>
+        <Stack
+          sx={{
+            position: "absolute",
+            height: 62,
+            width: "81%",
+            content: "''",
+            backgroundColor: "WHITE",
+          }}
+        ></Stack>
+      </Box>
+      <Stack padding={"10% 0 5% 3%"} direction={"row"}>
+        <Stack gap={"80px"} width={"70vw"}>
           {Eventcard.map((val, index) => (
-            <Stack direction={"row"}>
+            <Stack direction={"row"} key={index}>
               <Stack
                 sx={{
                   height: "fit-content",
@@ -30,7 +53,7 @@ const Eventhero = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    height: 490,
+                    height: "30vw",
                     backgroundImage: `url(${val?.cover})`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
@@ -80,8 +103,8 @@ const Eventhero = () => {
                     flexDirection={"row"}
                     gap={"50px"}
                     sx={{
-                      borderBottom: "2px solid #ffcc00",
-                      borderBottomWidth: 4,
+                      borderBottom: "1px solid grey",
+                      borderBottomWidth: 1,
                       padding: "39px 0 39px 39px",
                     }}
                   >
@@ -139,7 +162,7 @@ const Eventhero = () => {
                       <Box
                         display={"flex"}
                         flexDirection={"column"}
-                        ColumnGap={"10px"}
+                        gap={1}
                       >
                         <Typography
                           variant="h6"
@@ -153,7 +176,16 @@ const Eventhero = () => {
                         >
                           {val.title}
                         </Typography>
-                        <Typography>{val.des}</Typography>{" "}
+                        <Typography sx={{letterSpacing:1}} color={"grey"}>{val.des}</Typography>
+                        <Box pt={2}>
+                        <Button pt sx={{
+                          width:"250px",
+                          height:"45px",
+                          fontSize:"19px",
+                          bgcolor:"#ffcc00",
+                          color:"black",
+                          
+                        }}>Know More</Button></Box>
                       </Box>
                     </Box>
                   </Box>
@@ -162,15 +194,115 @@ const Eventhero = () => {
             </Stack>
           ))}
         </Stack>
-        <Stack width={"40%"} paddingLeft={"30px"}>
-          <Box>
-            <Typography variant="h5">What is Space Foundation?</Typography>
-            <Typography>
-              Space Foundatiom is a new type of fundraising where you can raise
-              funds for your own personal cause, even if you're not a registered
-              charity.
-            </Typography>
+        <Stack width={"40%"} pl={"30px"} gap={"20px"}>
+          <Typography variant="h5" fontWeight={"bold"}>
+            What is Space Foundation?
+          </Typography>
+          <Typography color={"grey"} pr={5}>
+            Space Foundatiom is a new type of fundraising where you can raise
+            funds for your own personal cause, even if you're not a registered
+            charity.
+          </Typography>
+          <Box marginTop="10px">
+            <Link to="/" className="mainNavLInks1">
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "Center",
+                  alignItems: "center",
+                }}
+              >
+                <Typography fontWeight={"bold"}> Become a volunteer</Typography>
+                <ArrowForwardIcon color="#ffcd00" className="main2" />
+              </Box>
+            </Link>
           </Box>
+          <Stack gap={4} pt={2}>
+            <Typography fontWeight={"bold"} variant="h5">
+              Upcoming Event
+            </Typography>
+            <Typography
+              sx={{
+                content: "''",
+                width: "90%",
+                height: "2px",
+                backgroundColor: "#ffcd00",
+              }}
+            ></Typography>
+            <Imageslide />
+          </Stack>
+          <Stack gap={4} pt={2}>
+            <Typography fontWeight={"bold"} variant="h5">
+              Recent Posts
+            </Typography>
+            <Typography
+              sx={{
+                content: "''",
+                width: "90%",
+                height: "2px",
+                backgroundColor: "#ffcd00",
+              }}
+            ></Typography>
+            <Stack direction={"row"} gap={"15px"}>
+              <Box>
+                <img
+                  style={{ width: "100px", height: "100px" }}
+                  src="https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_14-150x150.jpg"
+                  alt=""
+                />
+              </Box>
+              <Stack>
+                <Typography variant="h6" fontWeight={"bold"} sx={{
+                  cursor:"pointer",
+                  "&:hover": {
+                    color: "#ffcc00",
+                  },
+                }}>
+                  First child dies of Ebola in
+                </Typography>
+                <Typography color={"grey"}>August 12, 2019</Typography>
+              </Stack>
+            </Stack>
+            <Stack direction={"row"} gap={"15px"}>
+              <Box>
+                <img
+                  style={{ width: "100px", height: "100px" }}
+                  src="https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_14-150x150.jpg"
+                  alt=""
+                />
+              </Box>
+              <Stack>
+                <Typography variant="h6" fontWeight={"bold"} sx={{
+                  cursor:"pointer",
+                  "&:hover": {
+                    color: "#ffcc00",
+                  },}}>
+                  First child dies of Ebola in
+                </Typography>
+                <Typography color={"grey"}>August 12, 2019</Typography>
+              </Stack>
+            </Stack>
+            <Stack direction={"row"} gap={"15px"}>
+              <Box>
+                <img
+                  style={{ width: "100px", height: "100px" }}
+                  src="https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_14-150x150.jpg"
+                  alt=""
+                />
+              </Box>
+              <Stack>
+                <Typography variant="h6" fontWeight={"bold"} sx={{
+                  cursor:"pointer",
+                  "&:hover": {
+                    color: "#ffcc00",
+                  },}}>
+                  First child dies of Ebola in
+                </Typography>
+                <Typography color={"grey"}>August 12, 2019</Typography>
+              </Stack>
+            </Stack>
+          </Stack>
         </Stack>
       </Stack>
     </>
