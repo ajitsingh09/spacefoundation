@@ -23,8 +23,8 @@ const Imageslider = () => {
           dragConstraints={{ right: 0, left: -width }}
           className="inner-carousel"
         >
-          {images.map((val) => (
-            <motion.div className="item" key={val.img}>
+          {images.map((val, index) => (
+            <motion.div className="item" key={index}>
               <div>{val.img}</div>
             </motion.div>
           ))}

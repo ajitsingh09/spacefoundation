@@ -33,12 +33,8 @@ const Sponser = () => {
       </Box>
       <Stack direction={"row"} gap={2} flexWrap={"wrap"}>
         {logos.map((val) => (
-          <Box width={"190px"} height={"140px"} p={1} flexGrow={1}>
-            <img
-              src={val.img}
-              alt=""
-              style={{ width: "100%", height: "100%" }}
-            />
+          <Box width={"110px"} height={"70px"} key={val.id}>
+            <img src={val.img} alt="" />
           </Box>
         ))}
         <Box width={"190px"} flexGrow={1} />

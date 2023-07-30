@@ -300,68 +300,68 @@ export const donation = [
   {
     id: "0",
     img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    btncol: "orange",
+    btncol: "#b250d2",
     title: "Child Support",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
-    barcol: "orange",
+    barcol: "#b250d2",
     Goals: "25000",
     Raised: "5600",
-    btn2col: "orange",
+    btn2col: "#b250d2",
   },
   {
     id: "1",
     img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    btncol: "purple",
+    btncol: "#ef884c",
     title: "Child Support",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
-    barcol: "purple",
+    barcol: "#ef884c",
     Goals: "35000",
     Raised: "15600",
-    btn2col: "purple",
+    btn2col: "#ef884c",
   },
   {
     id: "2",
     img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    btncol: "yellow",
+    btncol: "#2780ba",
     title: "Child Support",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
-    barcol: "yellow",
+    barcol: "#2780ba",
     Goals: "155000",
     Raised: "85600",
-    btn2col: "yellow",
+    btn2col: "#2780ba",
   },
   {
     id: "3",
     img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    btncol: "grey",
+    btncol: "#d55342",
     title: "Child Support",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
-    barcol: "grey",
+    barcol: "#d55342",
     Goals: "55000",
     Raised: "25600",
-    btn2col: "grey",
+    btn2col: "#d55342",
   },
   {
     id: "4",
     img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    btncol: "blue",
+    btncol: "#00baa3",
     title: "Child Support",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
-    barcol: "blue",
+    barcol: "#00baa3",
     Goals: "525000",
     Raised: "225600",
-    btn2col: "blue",
+    btn2col: "#00baa3",
   },
   {
     id: "5",
     img: "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
-    btncol: "green",
+    btncol: "#efc94c",
     title: "Child Support",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.",
-    barcol: "green",
+    barcol: "#efc94c",
     Goals: "51000",
     Raised: "42600",
-    btn2col: "green",
+    btn2col: "#efc94c",
   },
 ];
 export const Eventcard = [
@@ -377,7 +377,7 @@ export const Eventcard = [
     time: "10:00 AM - 07:00 PM",
     place: "Russian & Turkish Baths",
     title: "How do you know if a stock will make you money over time",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend nd ac tellus fringilla eleifend aksdh.",
   },
   {
     id: 1,
@@ -391,7 +391,7 @@ export const Eventcard = [
     time: "10:00 AM - 07:00 PM",
     place: "Russian & Turkish Baths",
     title: "How do you know if a stock will make you money over time",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend ac tellus fringilla eleifend aksdh",
   },
   {
     id: 2,
@@ -405,39 +405,111 @@ export const Eventcard = [
     time: "10:00 AM - 07:00 PM",
     place: "Russian & Turkish Baths",
     title: "How do you know if a stock will make you money over time",
-    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifendLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend",
+    des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in magna ac tellus fringilla eleifend. nd ac tellus fringilla eleifend aksdh",
   },
 ];
 
 export const logos = [
   {
+    id:"0",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/awb-1.png",
   },
   {
+    id:"1",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/nasa-1.png",
   },
   {
+    id:"2",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/oxford-2.png",
   },
   {
+    id:"3",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/iau-logo-2.png",
   },
   {
+    id:"4",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/UIts-Logo-1.png",
   },
   {
+    id:"5",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/Akhok-1.png",
   },
   {
+    id:"6",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/EarthKAM-1.png",
   },
   {
+    id:"7",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/novodya-1.png",
   },
   {
+    id:"8",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/Space-Arcade-Logo-1.png",
   },
   {
+    id:"9",
     img: "https://space-foundation.org/wp-content/uploads/2022/08/ksc-1.png",
   },
 ];
+export const cards=[
+  {
+    id:"0",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    title:"How do you know if a stock will make you money over time.",
+    Start:"July 31, 2019",
+    End:"July 31, 2020",
+    Address:"Russian & Turkish Baths"
+  },
+  {
+    id:"1",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    title:"How do you know if a stock will make you money over time.",
+    Start:"July 31, 2019",
+    End:"July 31, 2020",
+    Address:"Russian & Turkish Baths"
+  },
+  {
+    id:"2",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    title:"How do you know if a stock will make you money over time.",
+    Start:"July 31, 2019",
+    End:"July 31, 2020",
+    Address:"Russian & Turkish Baths"
+  },
+  {
+    id:"3",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    title:"How do you know if a stock will make you money over time.",
+    Start:"July 31, 2019",
+    End:"July 31, 2020",
+    Address:"Russian & Turkish Baths"
+  },
+  {
+    id:"4",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    title:"How do you know if a stock will make you money over time.",
+    Start:"July 31, 2019",
+    End:"July 31, 2020",
+    Address:"Russian & Turkish Baths"
+  },
+  {
+    id:"5",
+    cover:
+      "https://demoapus2.com/crowdngo/wp-content/uploads/2019/08/charity_01-670x453.jpg",
+    png: "https://demoapus2.com/crowdngo/wp-content/themes/crowdngo/images/unlink.png",
+    title:"How do you know if a stock will make you money over time.",
+    Start:"July 31, 2019",
+    End:"July 31, 2020",
+    Address:"Russian & Turkish Baths"
+  },
+]
