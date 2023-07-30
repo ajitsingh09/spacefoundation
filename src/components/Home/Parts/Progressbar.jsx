@@ -17,7 +17,14 @@ const Progressbar = ({ raised, goals }) => {
   }, [targetPercentage]);
 
   return (
-    <Box sx={{ position: "relative", display: "inline-block", width:"200px", height:"100px" }}>
+    <Box
+      sx={{
+        position: "relative",
+        display: "inline-block",
+        width: "200px",
+        height: "100px",
+      }}
+    >
       con
       <CircularProgress
         variant="determinate"

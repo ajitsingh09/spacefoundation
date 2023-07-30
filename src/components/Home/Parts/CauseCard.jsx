@@ -27,7 +27,7 @@ const Causecard = () => {
           },
         }}
       >
-        {card.map((val,index) => {
+        {card.map((val, index) => {
           return (
             <>
               <Box position={"relative"} key={index}>

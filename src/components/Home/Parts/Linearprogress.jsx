@@ -30,7 +30,7 @@ const Progressbar2 = ({ raised, goals, clr }) => {
         thickness={5}
         style={{}}
         sx={{
-          width:"300px",
+          width: "300px",
           bgcolor: "#f1f1f1",
           [`& .${linearProgressClasses.bar}`]: {
             backgroundColor: clr,
@@ -42,11 +42,11 @@ const Progressbar2 = ({ raised, goals, clr }) => {
         variant="body1"
         component="div"
         sx={{
-          bgcolor:clr,
-          color:"white",
+          bgcolor: clr,
+          color: "white",
           position: "absolute",
           top: "50%",
-          p:"4px",
+          p: "4px",
           left: `${animationPercentage}%`,
           transform: "translate(-50%, -50%)",
         }}
