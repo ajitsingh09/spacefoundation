@@ -12,7 +12,6 @@ import Button from "./utils/Button";
 import MobileScreenShareOutlinedIcon from "@mui/icons-material/MobileScreenShareOutlined";
 import ForwardToInboxOutlinedIcon from "@mui/icons-material/ForwardToInboxOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
 import Map from "./HexaMap";
 import Number from "./Home/Number";
 
@@ -25,23 +24,25 @@ const Footer = () => {
         justifyContent={"center"}
         sx={{
           widht: "100%",
-          height: "600px",
           color: "white",
           backgroundColor: "#3e3d3d",
         }}
       >
-        <Box
-          display={"flex"}
-          flexDirection={"column"}
-          sx={{
-            width: "1200px",
-            height: "400px",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        >
-          <Stack direction={"row"} width={"100%"} paddingTop={"60px"}>
-            <Box width={"33%"}>
+        <Box display={"flex"} flexDirection={"column"}>
+          <Stack
+            direction={"row"}
+            width={"100%"}
+            paddingTop={"60px"}
+            flexWrap={"wrap"}
+            rowGap={3}
+            justifyContent={"space-around"}
+          >
+            <Box
+              width={"30%"}
+              minWidth={275}
+              flexGrow={{ xs: 1, md: 0 }}
+              mx={{ xs: 3, md: 0 }}
+            >
               <Box
                 paddingLeft={"45px"}
                 display={"flex"}
@@ -91,10 +92,35 @@ const Footer = () => {
                     <Typography>Volunteer</Typography>
                   </Button>
                 </Box>
+                <Stack gap={1}>
+                  <Link to="#" className="footerLinks">
+                    {" "}
+                    Events
+                  </Link>
+                  <Link to="#" className="footerLinks">
+                    {" "}
+                    Our Story
+                  </Link>
+                  <Link to="#" className="footerLinks">
+                    {" "}
+                    Media
+                  </Link>
+                  <Link to="#" className="footerLinks">
+                    {" "}
+                    Contact Us
+                  </Link>
+                </Stack>
               </Box>
             </Box>
-            <Box width={"33%"} display={"flex"} flexDirection={"column"}>
-              <Box width={"350px"} height={"300px"}>
+            <Box
+              width={"30%"}
+              minWidth={275}
+              flexGrow={{ xs: 1, md: 0 }}
+              display={"flex"}
+              mx={{ xs: 3, md: 0 }}
+              flexDirection={"column"}
+            >
+              <Box width={"100%"} height={"300px"}>
                 <Map />
               </Box>
               <Box display={"flex"} gap={"15px"} flexDirection={"column"}>
@@ -109,7 +135,7 @@ const Footer = () => {
                 </form>
                 <Button
                   sx={{
-                    width: "35%",
+                    width: 120,
                     fontSize: "15px",
                   }}
                 >
@@ -118,8 +144,10 @@ const Footer = () => {
               </Box>
             </Box>
             <Box
-              width={"350px"}
-              height={"400px"}
+              width={"30%"}
+              minWidth={275}
+              flexGrow={{ xs: 1, md: 0 }}
+              mx={{ xs: 3, md: 0 }}
               sx={{
                 boxShadow: "1px 2px 7px 0px rgb(8, 8, 8)",
               }}
@@ -192,20 +220,28 @@ const Footer = () => {
             </Box>
           </Stack>
 
-          <Box paddingTop={"40px"}>
+          <Stack paddingTop={"40px"}>
             <Typography
               sx={{
                 content: "''",
-                width: "1200px",
+                width: "95%",
                 height: "1px",
+                alignSelf: "center",
                 backgroundColor: "grey",
               }}
             ></Typography>
-            <Box display={"flex"} justifyContent={"space-between"}>
+            <Box
+              display={"flex"}
+              justifyContent={"space-between"}
+              flexDirection={{ xs: "column", sm: "row" }}
+              alignItems={"center"}
+              py={2}
+              px={4}
+              gap={4}
+            >
               <Box
-                height={"100px"}
                 display={"flex"}
-                flexDirection={"row"}
+                flexDirection={{ xs: "column", sm: "row" }}
                 gap={"20px"}
                 alignItems={"center"}
               >
@@ -226,7 +262,7 @@ const Footer = () => {
                 </Typography>
               </Box>
             </Box>
-          </Box>
+          </Stack>
         </Box>
       </Box>
     </Box>

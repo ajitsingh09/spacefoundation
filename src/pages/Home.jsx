@@ -23,6 +23,7 @@ const Home = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
+          overflowX: "hidden",
         }}
       >
         <HeroSection />

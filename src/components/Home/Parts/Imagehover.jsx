@@ -13,7 +13,7 @@ const MyComponent = () => {
     <>
       {hover.map((val, index) => (
         <Box
-        key={index}
+          key={index}
           sx={{
             width: "585px",
             height: "272px",

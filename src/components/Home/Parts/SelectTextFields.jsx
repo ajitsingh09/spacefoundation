@@ -20,21 +20,38 @@ const currencies = [
 export default function SelectTextFields() {
   return (
     <>
-      <Typography variant="h4" fontWeight={"bold"} pb={4}>
-        We are experts in Space Foundation services and solutions
-      </Typography>
-      <Box
-        component="form"
-        sx={{
-          "& .MuiTextField-root": { m: 1, width: "40%" },
-        }}
-        noValidate
-        autoComplete="off"
+      <Stack
+        height={"100%"}
+        width={"100%"}
+        justifyContent={"center"}
+        alignItems={"center"}
       >
-        <Stack direction={"column"} gap={"20px"}>
-          <Stack direction={{ xs: "column", lg: "row" }}>
+        <Typography
+          variant="h4"
+          fontWeight={"bold"}
+          pb={4}
+          sx={{ width: "90%" }}
+        >
+          We are experts in Space Foundation services and solutions
+        </Typography>
+        <Box
+          component="form"
+          sx={{
+            "& .MuiTextField-root": { mb: 1, width: { xs: "100%", md: "40%" } },
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <Stack
+            direction={{ xs: "column", md: "row" }}
+            sx={{ width: "100%" }}
+            justifyContent={"center"}
+            flexWrap={"wrap"}
+            alignItems={"center"}
+            gap={2}
+          >
             <TextField
-              sx={{ width: 200 }}
+              sx={{ width: { xs: "100%", md: 200 } }}
               id="outlined-select-currency-native"
               select
               SelectProps={{
@@ -48,42 +65,45 @@ export default function SelectTextFields() {
               ))}
             </TextField>
             <TextField
-              sx={{ width: 200 }}
+              sx={{ width: { xs: "100%", md: 200 } }}
               id="outlined-basic"
               label="Name"
               variant="outlined"
             />
-          </Stack>
-          <Stack direction={{ xs: "column", lg: "row" }}>
             <TextField
-              sx={{ width: 200 }}
+              sx={{ width: { xs: "100%", md: 200 } }}
               id="outlined-basic"
               label="Phone"
               variant="outlined"
             />
             <TextField
-              sx={{ width: 200 }}
+              sx={{ width: { xs: "100%", md: 200 } }}
               id="outlined-basic"
               label="Email"
               variant="outlined"
             />
           </Stack>
-        </Stack>
-        <Stack alignItems="left" paddingTop="20px">
-          <Button
-            variant="contained"
-            sx={{
-              width: "30%",
-              color: "black",
-              backgroundColor: "#ffcd00",
-              "&:hover": { backgroundColor: "white" },
-              fontWeight: "bold",
-            }}
+          <Stack
+            maxWidth={600}
+            sx={{ width: "100%" }}
+            justifyContent={"center"}
+            alignItems={"center"}
+            pt={2}
           >
-            DONATION
-          </Button>
-        </Stack>
-      </Box>
+            <Button
+              sx={{
+                width: "50%",
+                color: "black",
+                backgroundColor: "#ffcd00",
+                "&:hover": { backgroundColor: "white" },
+                fontWeight: "bold",
+              }}
+            >
+              Submit
+            </Button>
+          </Stack>
+        </Box>
+      </Stack>
     </>
   );
 }
