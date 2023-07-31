@@ -1,13 +1,12 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { cards } from "../../../dummydata";
-import Button from "../../utils/Button";
 import { IconButton } from "@mui/material";
 import CircleIcon from "@mui/icons-material/Circle";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
-const Imageslide = () => {
+const UpcomingEventslider = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
   const [slide, setSlide] = useState(0);
 
@@ -100,40 +99,41 @@ const Imageslide = () => {
                   }}
                 />
               </Box>
-              <Box pt={2} pr={2} pb={2} >
+              <Box pt={2} pr={2} pb={2}>
                 <Stack gap={2}>
-                <Typography
-                  fontSize={"18px"}
-                  fontWeight={"bold"}
-                  sx={{
-                     
-                    cursor: "pointer",
-                    "&:hover": {
-                      color: "#ffcc00",
-                    },
-                  }}
-                >
-                  {val.title}
-                </Typography>
-                
-                <Stack gap={1}>
-                  <Stack direction={"row"} gap={2}>
-                    <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
-                    <Typography color={"grey"}>
-                      Start: {val.Start}
-                    </Typography>{" "}
+                  <Typography
+                    fontSize={"18px"}
+                    fontWeight={"bold"}
+                    sx={{
+                      cursor: "pointer",
+                      "&:hover": {
+                        color: "#ffcc00",
+                      },
+                    }}
+                  >
+                    {val.title}
+                  </Typography>
+
+                  <Stack gap={1}>
+                    <Stack direction={"row"} gap={2}>
+                      <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
+                      <Typography color={"grey"}>
+                        Start: {val.Start}
+                      </Typography>{" "}
+                    </Stack>
+                    <Stack direction={"row"} gap={2}>
+                      <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
+                      <Typography color={"grey"}>
+                        End: {val.End}
+                      </Typography>{" "}
+                    </Stack>
+                    <Stack direction={"row"} gap={2}>
+                      <EmailOutlinedIcon sx={{ color: "#ffcc00" }} />
+                      <Typography color={"grey"}>
+                        Address: {val.Address}
+                      </Typography>{" "}
+                    </Stack>
                   </Stack>
-                  <Stack direction={"row"} gap={2}>
-                    <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
-                    <Typography color={"grey"}>End: {val.End}</Typography>{" "}
-                  </Stack>
-                  <Stack direction={"row"} gap={2}>
-                    <EmailOutlinedIcon sx={{ color: "#ffcc00" }} />
-                    <Typography color={"grey"}>
-                      Address: {val.Address}
-                    </Typography>{" "}
-                  </Stack>
-                </Stack>
                 </Stack>
               </Box>
             </Box>
@@ -216,4 +216,4 @@ const Imageslide = () => {
   );
 };
 
-export default Imageslide;
+export default UpcomingEventslider;

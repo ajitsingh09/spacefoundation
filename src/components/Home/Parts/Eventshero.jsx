@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Eventcard, cards } from "../../../dummydata";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+import UpcomingEventslider from "./UpcomingEventslider";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Imageslide from "./upcomingEventslider";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import Mapevent from "./Map";
 import Button from "../../utils/Button";
@@ -159,11 +159,7 @@ const Eventhero = () => {
                           <Typography>{val.place}</Typography>
                         </Box>
                       </Box>
-                      <Box
-                        display={"flex"}
-                        flexDirection={"column"}
-                        gap={1}
-                      >
+                      <Box display={"flex"} flexDirection={"column"} gap={1}>
                         <Typography
                           variant="h6"
                           fontWeight={"bold"}
@@ -176,16 +172,23 @@ const Eventhero = () => {
                         >
                           {val.title}
                         </Typography>
-                        <Typography sx={{letterSpacing:1}} color={"grey"}>{val.des}</Typography>
+                        <Typography sx={{ letterSpacing: 1 }} color={"grey"}>
+                          {val.des}
+                        </Typography>
                         <Box pt={2}>
-                        <Button pt sx={{
-                          width:"250px",
-                          height:"45px",
-                          fontSize:"19px",
-                          bgcolor:"#ffcc00",
-                          color:"black",
-                          
-                        }}>Know More</Button></Box>
+                          <Button
+                            pt
+                            sx={{
+                              width: "250px",
+                              height: "45px",
+                              fontSize: "19px",
+                              bgcolor: "#ffcc00",
+                              color: "black",
+                            }}
+                          >
+                            Know More
+                          </Button>
+                        </Box>
                       </Box>
                     </Box>
                   </Box>
@@ -230,7 +233,7 @@ const Eventhero = () => {
                 backgroundColor: "#ffcd00",
               }}
             ></Typography>
-            <Imageslide />
+            <UpcomingEventslider />
           </Stack>
           <Stack gap={4} pt={2}>
             <Typography fontWeight={"bold"} variant="h5">
@@ -253,12 +256,16 @@ const Eventhero = () => {
                 />
               </Box>
               <Stack>
-                <Typography variant="h6" fontWeight={"bold"} sx={{
-                  cursor:"pointer",
-                  "&:hover": {
-                    color: "#ffcc00",
-                  },
-                }}>
+                <Typography
+                  variant="h6"
+                  fontWeight={"bold"}
+                  sx={{
+                    cursor: "pointer",
+                    "&:hover": {
+                      color: "#ffcc00",
+                    },
+                  }}
+                >
                   First child dies of Ebola in
                 </Typography>
                 <Typography color={"grey"}>August 12, 2019</Typography>
@@ -273,11 +280,16 @@ const Eventhero = () => {
                 />
               </Box>
               <Stack>
-                <Typography variant="h6" fontWeight={"bold"} sx={{
-                  cursor:"pointer",
-                  "&:hover": {
-                    color: "#ffcc00",
-                  },}}>
+                <Typography
+                  variant="h6"
+                  fontWeight={"bold"}
+                  sx={{
+                    cursor: "pointer",
+                    "&:hover": {
+                      color: "#ffcc00",
+                    },
+                  }}
+                >
                   First child dies of Ebola in
                 </Typography>
                 <Typography color={"grey"}>August 12, 2019</Typography>
@@ -292,11 +304,16 @@ const Eventhero = () => {
                 />
               </Box>
               <Stack>
-                <Typography variant="h6" fontWeight={"bold"} sx={{
-                  cursor:"pointer",
-                  "&:hover": {
-                    color: "#ffcc00",
-                  },}}>
+                <Typography
+                  variant="h6"
+                  fontWeight={"bold"}
+                  sx={{
+                    cursor: "pointer",
+                    "&:hover": {
+                      color: "#ffcc00",
+                    },
+                  }}
+                >
                   First child dies of Ebola in
                 </Typography>
                 <Typography color={"grey"}>August 12, 2019</Typography>
