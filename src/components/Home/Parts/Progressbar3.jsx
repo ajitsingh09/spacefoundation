@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { CircularProgress, Typography, Box } from "@mui/material";
-
-const Progressbar = ({ raised, goals }) => {
+import {
+  LinearProgress,
+  Typography,
+  Box,
+  linearProgressClasses,
+} from "@mui/material";
+const Progressbar3 = ({ raised, goals, clr }) => {
   // const raisedAmount = 46303;
   // const goalAmount = 95000;
   const targetPercentage = Math.floor((raised / goals) * 100);
@@ -11,37 +15,37 @@ const Progressbar = ({ raised, goals }) => {
   useEffect(() => {
     const animationTimeout = setTimeout(() => {
       setAnimationPercentage(targetPercentage);
-    }, 1000); // Adjust the duration of the animation here (in milliseconds)
+    }, 1000);
 
     return () => clearTimeout(animationTimeout);
   }, [targetPercentage]);
 
   return (
-    <Box
-      sx={{
-        position: "relative",
-        display: "inline-block",
-        width: "200px",
-        height: "100px",
-      }}
-    >
-      
-      <CircularProgress
+    <Box sx={{ position: "relative", display: "inline-block", width:"100%" }}>
+      <LinearProgress
         variant="determinate"
         value={animationPercentage}
-        size={100}
+        size={"large"}
         thickness={5}
         sx={{
-          color: "#ffcd00",
+          width: "100%",
+          bgcolor: "#444444",
+          [`& .${linearProgressClasses.bar}`]: {
+            backgroundColor: clr,
+          },
+          height: 5,
         }}
       />
       <Typography
         variant="body1"
         component="div"
-        style={{
+        sx={{
+          bgcolor: clr,
+          color: "white",
           position: "absolute",
           top: "50%",
-          left: "50%",
+          p: "4px",
+          left: `${animationPercentage}%`,
           transform: "translate(-50%, -50%)",
         }}
       >
@@ -51,4 +55,4 @@ const Progressbar = ({ raised, goals }) => {
   );
 };
 
-export default Progressbar;
+export default Progressbar3;

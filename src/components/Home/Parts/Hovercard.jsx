@@ -130,7 +130,7 @@ const Hovercard = () => {
                     width="300px"
                     justifyContent="center"
                     alignItems="center"
-                  >
+                  > 
                     <Box
                       width="230px"
                       textAlign="center"
@@ -167,6 +167,7 @@ const Hovercard = () => {
                       sx={{
                         width: "48%",
                         color: "black",
+                        borderRadius:"0",
                         backgroundColor: "#ffcd00",
                         "&:hover": { backgroundColor: "white" },
                         fontWeight: "bold",

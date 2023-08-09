@@ -93,6 +93,7 @@ const ContactSection = () => {
             width: "15%",
             color: "black",
             backgroundColor: "WHITE",
+            borderRadius:0,
             "&:hover": { backgroundColor: "#ffcd00" },
             fontWeight: "bold",
           }}

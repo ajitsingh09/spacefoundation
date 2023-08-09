@@ -70,8 +70,8 @@ const NewSection = () => {
           <IconButton onClick={() => handleSlider(0)}>
             <CircleIcon
               sx={{
-                color: slider === 0 ? "#ffcc00" : "black",
-                outline: "0px solid black",
+                color: slider === 0 ? "#ffcc00" : "grey",
+                outline: "0px solid grey",
                 outlineOffset: 2,
                 borderRadius: "50%",
                 outlineWidth: slider === 0 ? 2 : 0,
@@ -81,8 +81,8 @@ const NewSection = () => {
           <IconButton onClick={() => handleSlider(1)}>
             <CircleIcon
               sx={{
-                color: slider === 1 ? "#ffcc00" : "black",
-                outline: "0px solid black",
+                color: slider === 1 ? "#ffcc00" : "grey",
+                outline: "0px solid grey",
                 outlineOffset: 2,
                 borderRadius: "50%",
                 outlineWidth: slider === 1 ? 2 : 0,
@@ -93,8 +93,8 @@ const NewSection = () => {
             <IconButton onClick={() => handleSlider(2)}>
               <CircleIcon
                 sx={{
-                  color: slider === 2 ? "#ffcc00" : "black",
-                  outline: "0px solid black",
+                  color: slider === 2 ? "#ffcc00" : "grey",
+                  outline: "0px solid grey",
                   outlineOffset: 2,
                   borderRadius: "50%",
                   outlineWidth: slider === 2 ? 2 : 0,
@@ -107,8 +107,8 @@ const NewSection = () => {
               <IconButton onClick={() => handleSlider(3)}>
                 <CircleIcon
                   sx={{
-                    color: slider === 3 ? "#ffcc00" : "black",
-                    outline: "0px solid black",
+                    color: slider === 3 ? "#ffcc00" : "grey",
+                    outline: "0px solid grey",
                     outlineOffset: 2,
                     borderRadius: "50%",
                     outlineWidth: slider === 3 ? 2 : 0,
@@ -118,8 +118,8 @@ const NewSection = () => {
               <IconButton onClick={() => handleSlider(4)}>
                 <CircleIcon
                   sx={{
-                    color: slider === 4 ? "#ffcc00" : "black",
-                    outline: "0px solid black",
+                    color: slider === 4 ? "#ffcc00" : "grey",
+                    outline: "0px solid grey",
                     outlineOffset: 2,
                     borderRadius: "50%",
                     outlineWidth: slider === 4 ? 2 : 0,
@@ -129,8 +129,8 @@ const NewSection = () => {
               <IconButton onClick={() => handleSlider(5)}>
                 <CircleIcon
                   sx={{
-                    color: slider === 5 ? "#ffcc00" : "black",
-                    outline: "0px solid black",
+                    color: slider === 5 ? "#ffcc00" : "grey",
+                    outline: "0px solid grey",
                     outlineOffset: 2,
                     borderRadius: "50%",
                     outlineWidth: slider === 5 ? 2 : 0,

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Stack } from "@mui/material";
 import Eventshero from "../components/Home/Parts/Eventshero";
 
-const MissionVisson = () => {
+const Event = () => {
   return (
     <div>
       <>
@@ -17,7 +17,7 @@ const MissionVisson = () => {
             backgroundColor: "black",
           }}
         >
-          <Typography variant="h1">mission and vission</Typography>
+          <Typography variant="h1">Events</Typography>
         </Box>
         <Eventshero />
       </>
@@ -25,4 +25,4 @@ const MissionVisson = () => {
   );
 };
 
-export default MissionVisson;
+export default Event;

@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Link, useNavigate } from "react-router-dom";
 import { Box, Stack, Typography, Button } from "@mui/material";
-import { color } from "@mui/system";
-
 const SubNav = () => {
   const navigate = useNavigate();
+  const navigateToDonate = useNavigate();
+
   const [popoverState, setPopoverState] = useState({});
   const [subLinks, setSubLinks] = useState(false);
+  const handleButtonClick = () => {
+    navigateToDonate('/donate');
+  };
   const handleMouseEnter = (linkId) => {
     setPopoverState((prevState) => ({
       ...prevState,
@@ -127,7 +130,7 @@ const SubNav = () => {
                   <Typography sx={{}}>Space Group</Typography>
                 </Link>
                 <Link to="/our-story/mission-vision" className="popperLinks">
-                  <Typography sx={{}}>Mission & Vission</Typography>
+                  <Typography sx={{}}>Events</Typography>
                 </Link>
                 <Link
                   to="/our-story/awards-recognitions"
@@ -594,12 +597,7 @@ const SubNav = () => {
         </div>
       </Stack>
       <Box
-        onClick={() =>
-          window.open(
-            "http://www.nicdarkthemes.com/themes/charity-foundation/wp/demo/charity-foundation/nd-donation/causes-01",
-            "_blank",
-          )
-        }
+        onClick={handleButtonClick}
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}

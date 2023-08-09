@@ -80,6 +80,7 @@ body {
   }
 }
 
+
 #map-container {
   position: relative;
 }
@@ -152,4 +153,28 @@ body {
   color: #fff;
   transform: scale(1.2) translateX(10px);
   /* transform:translateX(10px) */
+}
+
+
+.content-box {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/* Animation when the class 'show-animation' is applied */
+.content-box.show-animation {
+  
+  animation: slideUp 2s ease forwards;
+}
+
+/* Keyframes */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
