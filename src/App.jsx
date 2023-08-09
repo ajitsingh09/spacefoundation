@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import OurStory from "./pages/OurStory";
 import ContactUs from "./pages/ContactUs";
-import MissionVisson from "./pages/MissionVisson";
 import AwardsRecognition from "./pages/AwardsRecognition";
 import OurWork from "./pages/OurWork";
 import OurImpact from "./pages/OurImpact";
@@ -16,6 +15,7 @@ import FALP from "./pages/FALP";
 import Donate from "./pages/Donate";
 import Volunteer from "./pages/Volunteer";
 import SpaceInNews from "./pages/SpaceInNews";
+import Event from "./pages/Event";
 function App() {
   return (
     <>
@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/our-story" element={<OurStory />} />
-        <Route path="/our-story/mission-vision" element={<MissionVisson />} />
+        <Route path="/our-story/mission-vision" element={<Event />} />
         <Route
           path="/our-story/awards-recognitions/"
           element={<AwardsRecognition />}

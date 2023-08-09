@@ -1,17 +1,40 @@
 import { Box, Typography, Stack, Button } from "@mui/material";
 import { donation } from "../../../dummydata";
 import Progressbar2 from "./Linearprogress";
-// import Linearprogress from "./Linearprogress";
-// import Progressbar from "./Progressbar";
+import { useState, useEffect } from "react";
 const Donatenow = () => {
+  const [showAnimation, setShowAnimation] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const contentBox = document.querySelector(".content-box");
+      const contentBoxOffset = contentBox.offsetTop;
+      const windowHeight = window.innerHeight;
+      const scrollPosition = window.scrollY;
+      const animationStart = contentBoxOffset - windowHeight ;
+
+      // Check if the scroll position has reached the animation start point
+      if (scrollPosition > animationStart) {
+        setShowAnimation(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <Stack alignItems={"center"}>
+      <Stack alignItems={"center"} gap={3} pt={8}>
         <Typography fontSize={"18px"} color={"grey"}>
           HELP EVERYONE
         </Typography>
-        <Typography variant="h2">EACH DONATION IS AN ESSENTIAL HELP</Typography>
+        <Typography variant="h3" fontWeight={"bold"} color="#5c5c5c">
+          EACH DONATION IS AN ESSENTIAL HELP
+        </Typography>
       </Stack>
+    <Stack className={`content-box ${showAnimation ? 'show-animation' : ''}`}>
       <Stack
         flexWrap={"wrap"}
         gap={5}
@@ -79,7 +102,7 @@ const Donatenow = () => {
                 display="flex"
                 flexDirection="column"
                 paddingTop={"10px"}
-              >
+              > 
                 <Progressbar2
                   raised={val.Raised}
                   goals={val.Goals}
@@ -98,7 +121,7 @@ const Donatenow = () => {
                     width: "50%",
                     color: "white",
                     backgroundColor: val.btncol,
-                    borderRadius: "20px",
+                    borderRadius: 0,
                     "&:hover": { backgroundColor: val.btncol },
                     fontWeight: "bold",
                   }}
@@ -109,6 +132,7 @@ const Donatenow = () => {
             </Box>
           </Stack>
         ))}
+      </Stack>
       </Stack>
     </>
   );

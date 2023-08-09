@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import Donatenow from "../components/Home/Parts/Donatenow";
 
 const Donate = () => {
-  return (
+  return ( 
     <div>
       <>
         <Box

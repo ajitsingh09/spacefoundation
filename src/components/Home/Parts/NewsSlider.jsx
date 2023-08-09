@@ -24,7 +24,7 @@ const NewsSlider = () => {
           <Box
             sx={{
               minWidth: "100%",
-              height: "550px",
+              height: "500px",
               zIndex: "0",
               border: "1px solid #dbdbd9",
               "&:hover": {
@@ -101,9 +101,9 @@ const NewsSlider = () => {
                   }}
                 />
               </Box>
-              <Stack padding={"35px"}>
+              <Stack p={4}>
                 <Box display="flex" flexDirection="column" rowGap="19px">
-                  <Box display={"flex"} flexDirection={"column"} gap={"10px"}>
+                  <Box display={"flex"} flexDirection={"column"} gap={"20px"}>
                     <Box display={"flex"} flexDirection={"row"} gap={"5px"}>
                       <CalendarMonthOutlinedIcon sx={{ color: "#ffcc00" }} />
                       <Typography
@@ -122,7 +122,6 @@ const NewsSlider = () => {
                       color={"grey"}
                       // lineHeight={1.5}
                       letterSpacing={"0.3px"}
-                      width={"80%"}
                     >
                       {val.des}
                     </Typography>

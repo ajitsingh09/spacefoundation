@@ -107,6 +107,7 @@ const Number = () => {
         <Button
           variant="contained"
           sx={{
+            fontSize:"18px",
             width: "150px",
             color: "#ffcd00",
             backgroundColor: "white",

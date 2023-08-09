@@ -1,6 +1,6 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Eventcard, cards } from "../../../dummydata";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import UpcomingEventslider from "./UpcomingEventslider";
@@ -10,9 +10,14 @@ import Mapevent from "./Map";
 import Button from "../../utils/Button";
 
 const Eventhero = () => {
+  const navigateToEvent1= useNavigate();
   const [isHovered, setIsHovered] = useState(-1);
   const handleHover = (index) => {
     setIsHovered(index);
+  };
+  const handleToEvent = () => {
+    navigateToEvent1('/volunteer');
+    window.scrollTo(0, 0);
   };
   return (
     <>
@@ -60,6 +65,7 @@ const Eventhero = () => {
                   }}
                 >
                   <Box
+                     
                     display={"flex"}
                     justifyContent={"center"}
                     alignItems={"center"}
@@ -177,7 +183,7 @@ const Eventhero = () => {
                         </Typography>
                         <Box pt={2}>
                           <Button
-                            pt
+                            onClick={handleToEvent}
                             sx={{
                               width: "250px",
                               height: "45px",
